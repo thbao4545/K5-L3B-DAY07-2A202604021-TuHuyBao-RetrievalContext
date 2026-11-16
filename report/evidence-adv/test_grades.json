@@ -421,5 +421,11 @@
     "median_seconds": 4.08,
     "usd": "không tính: không biết đơn giá gpt-6-luna; embedding/pgvector/BM25 chạy cục bộ = 0",
     "dev_tokens_total_6_runs": 335200
+  },
+  "review": {
+    "author_reviewed": true,
+    "date": "2026-11-16",
+    "outcome": "accepted all 30 labels; kept 27/30",
+    "independent_recheck": "automatic key-value and citation-page check; no label changed"
   }
 }
