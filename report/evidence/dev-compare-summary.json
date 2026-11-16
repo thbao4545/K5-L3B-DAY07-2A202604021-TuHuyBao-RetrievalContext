@@ -1,0 +1,128 @@
+{
+  "split": "dev",
+  "n_questions": 20,
+  "cand": 20,
+  "rrf_k": 60,
+  "rows": [
+    {
+      "config": "dense",
+      "n": 20,
+      "hit1": 11,
+      "hit3": 16,
+      "mrr@3": 0.658,
+      "context_hit": {
+        "800": 3,
+        "1500": 11,
+        "3000": 16
+      },
+      "filter_questions": 0,
+      "filter_respected": null,
+      "median_ms": 32.0,
+      "misses": [
+        "q06",
+        "q09",
+        "q13",
+        "q16"
+      ]
+    },
+    {
+      "config": "dense+filter",
+      "n": 20,
+      "hit1": 11,
+      "hit3": 16,
+      "mrr@3": 0.658,
+      "context_hit": {
+        "800": 3,
+        "1500": 11,
+        "3000": 16
+      },
+      "filter_questions": 5,
+      "filter_respected": 5,
+      "median_ms": 33.9,
+      "misses": [
+        "q06",
+        "q09",
+        "q13",
+        "q16"
+      ]
+    },
+    {
+      "config": "bm25",
+      "n": 20,
+      "hit1": 16,
+      "hit3": 19,
+      "mrr@3": 0.867,
+      "context_hit": {
+        "800": 4,
+        "1500": 16,
+        "3000": 18
+      },
+      "filter_questions": 0,
+      "filter_respected": null,
+      "median_ms": 0.9,
+      "misses": [
+        "q05"
+      ]
+    },
+    {
+      "config": "bm25+filter",
+      "n": 20,
+      "hit1": 16,
+      "hit3": 19,
+      "mrr@3": 0.867,
+      "context_hit": {
+        "800": 4,
+        "1500": 16,
+        "3000": 18
+      },
+      "filter_questions": 5,
+      "filter_respected": 5,
+      "median_ms": 0.7,
+      "misses": [
+        "q05"
+      ]
+    },
+    {
+      "config": "hybrid",
+      "n": 20,
+      "hit1": 14,
+      "hit3": 16,
+      "mrr@3": 0.75,
+      "context_hit": {
+        "800": 3,
+        "1500": 14,
+        "3000": 16
+      },
+      "filter_questions": 0,
+      "filter_respected": null,
+      "median_ms": 37.7,
+      "misses": [
+        "q05",
+        "q06",
+        "q09",
+        "q16"
+      ]
+    },
+    {
+      "config": "hybrid+filter",
+      "n": 20,
+      "hit1": 14,
+      "hit3": 16,
+      "mrr@3": 0.75,
+      "context_hit": {
+        "800": 3,
+        "1500": 14,
+        "3000": 16
+      },
+      "filter_questions": 5,
+      "filter_respected": 5,
+      "median_ms": 32.1,
+      "misses": [
+        "q05",
+        "q06",
+        "q09",
+        "q16"
+      ]
+    }
+  ]
+}

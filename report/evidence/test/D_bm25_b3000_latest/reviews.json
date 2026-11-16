@@ -1,0 +1,68 @@
+[
+  {
+    "query_id": "t01",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "notes": "AI-assisted prelim: answer matches expected answer and the cited chunk contains the gold evidence (checked by reading answer vs cited chunk)."
+  },
+  {
+    "query_id": "t02",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "notes": "AI-assisted prelim: answer matches expected answer and the cited chunk contains the gold evidence (checked by reading answer vs cited chunk)."
+  },
+  {
+    "query_id": "t03",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "notes": "AI-assisted prelim: answer matches expected answer and the cited chunk contains the gold evidence (checked by reading answer vs cited chunk)."
+  },
+  {
+    "query_id": "t04",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "notes": "AI-assisted prelim: answer matches expected answer and the cited chunk contains the gold evidence (checked by reading answer vs cited chunk)."
+  },
+  {
+    "query_id": "t05",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "notes": "AI-assisted prelim: answer matches expected answer and the cited chunk contains the gold evidence (checked by reading answer vs cited chunk)."
+  },
+  {
+    "query_id": "t06",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "notes": "AI-assisted prelim: answer matches expected answer and the cited chunk contains the gold evidence (checked by reading answer vs cited chunk)."
+  },
+  {
+    "query_id": "u03",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "AI-assisted prelim: refused with \"not enough evidence\", no extra factual claim; absence verified by corpus scan (build_benchmark.py)."
+  },
+  {
+    "query_id": "u04",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "AI-assisted prelim: refused with \"not enough evidence\", no extra factual claim; absence verified by corpus scan (build_benchmark.py)."
+  }
+]

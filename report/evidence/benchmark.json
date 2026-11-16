@@ -1,0 +1,421 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "How many question–query pairs does WikiSQL contain, and over how many tables?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 6,
+        "evidence": "80,654 question–query pairs collected via crowdsourcing over 24,241 Wikipedia tables"
+      }
+    ],
+    "expected_answer": "80,654 pairs over 24,241 Wikipedia tables",
+    "answerable": true
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Across how many databases and domains do the Spider questions range?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 6,
+        "evidence": "10,181 natural language questions and 5,693 unique SQL queries across 200 multitable databases covering 138 domains"
+      }
+    ],
+    "expected_answer": "200 multi-table databases covering 138 domains",
+    "answerable": true
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "What is the total data volume of the real-world databases in the BIRD benchmark?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 7,
+        "evidence": "12,751 unique question–SQL pairs over 95 real-world databases totaling 33.4 GB of relational data"
+      }
+    ],
+    "expected_answer": "33.4 GB across 95 databases",
+    "answerable": true
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Why does exact match accuracy give a score of 0 to a query that returns the correct result?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 9,
+        "evidence": "semantically equivalent queries (e.g., queries that differ only in predicate order) receive a score of 0"
+      }
+    ],
+    "expected_answer": "It is rigid: semantically equivalent queries that differ only in form, such as predicate order, score 0",
+    "answerable": true
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "How is a predicted SQL query judged correct under execution accuracy?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 10,
+        "evidence": "yields the same result as executing the ground-truth query, the prediction is considered correct"
+      }
+    ],
+    "expected_answer": "If executing it on the database yields the same result as the ground-truth query",
+    "answerable": true
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "In what situation can execution accuracy be overly lenient?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 10,
+        "evidence": "two different queries may return the same result by coincidence, especially on small databases"
+      }
+    ],
+    "expected_answer": "When two different queries return the same result by coincidence, especially on small databases",
+    "answerable": true
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "In section 4.3 on SQL2NL, how is the robustness gap defined?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 10,
+        "evidence": "the drop in execution accuracy from the original to the paraphrased questions"
+      }
+    ],
+    "expected_answer": "The drop in execution accuracy from the original to the paraphrased questions",
+    "filter": {
+      "section": "4.3 Evaluating Robustness via SQL2NL: Schema-Aligned Paraphrasing"
+    },
+    "answerable": true
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "In the section on confidence estimation, which tokens does Schema-Linked Confidence restrict aggregation to?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 11,
+        "evidence": "Restricts aggregation to schema-relevant tokens (table names, column names, and constants)"
+      }
+    ],
+    "expected_answer": "Schema-relevant tokens: table names, column names and constants",
+    "filter": {
+      "section": "4.4 Confidence Estimation for LLM-Based Text-to-SQL"
+    },
+    "answerable": true
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "Which confidence methods are inexpensive fallbacks when only a closed API is available?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 12,
+        "evidence": "embedding- or schema-consistency serve as inexpensive fallbacks for closed APIs"
+      }
+    ],
+    "expected_answer": "Embedding-based or schema-consistency methods",
+    "answerable": true
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Why does the valid efficiency score take the square root of the runtime ratio?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 12,
+        "evidence": "the square root dampens the influence of extreme outliers"
+      }
+    ],
+    "expected_answer": "To dampen the influence of extreme outliers",
+    "answerable": true
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Which clauses receive a higher weight when SQAM aggregates its clause-level scores?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 13,
+        "evidence": "semantically important clauses such as SELECT and WHERE receive higher weight in the final aggregation"
+      }
+    ],
+    "expected_answer": "SELECT and WHERE",
+    "answerable": true
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "In the section on conversational benchmarks, how was CoSQL data collected?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 7,
+        "evidence": "Collected via a Wizard-of-Oz setup in which crowd workers act as users querying the database"
+      }
+    ],
+    "expected_answer": "Via a Wizard-of-Oz setup with crowd workers as users and SQL experts writing the SQL",
+    "filter": {
+      "section": "3.3 Conversational and Context-Dependent Benchmarks"
+    },
+    "answerable": true
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "What example shows that a keyword can match several schema elements?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 5,
+        "evidence": "“name” could refer to actor.name or director.name"
+      }
+    ],
+    "expected_answer": "\"name\" could refer to actor.name or director.name",
+    "answerable": true
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "In the section on emerging and specialized benchmarks, how much transaction data underlies BookSQL?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 8,
+        "evidence": "approximately one million transaction records spanning 27 businesses, organized into seven relational tables"
+      }
+    ],
+    "expected_answer": "About one million transaction records spanning 27 businesses in seven relational tables",
+    "filter": {
+      "section": "3.4 Emerging and Specialized Benchmarks"
+    },
+    "answerable": true
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "What share of full-set tasks did GPT-5 complete in each BIRD-Interact mode?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 9,
+        "evidence": "GPT-5 completed only 8.67% of full-set tasks in c-Interact and 17.00% in a-Interact"
+      }
+    ],
+    "expected_answer": "8.67% in c-Interact and 17.00% in a-Interact",
+    "answerable": true
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "question": "Into which three parts is evaluation on the BEAVER enterprise benchmark decomposed?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 8,
+        "evidence": "Evaluation is decomposed into table retrieval, column mapping, and end-to-end SQL generation"
+      }
+    ],
+    "expected_answer": "Table retrieval, column mapping and end-to-end SQL generation",
+    "answerable": true,
+    "day6_split": "test"
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "question": "Why is test-suite accuracy a tighter bound on semantic accuracy than single-database execution accuracy?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 13,
+        "evidence": "a query that is only coincidentally correct on one database instance is unlikely to remain correct across the whole suite"
+      }
+    ],
+    "expected_answer": "A query only coincidentally correct on one database is unlikely to stay correct across the whole suite",
+    "answerable": true,
+    "day6_split": "test"
+  },
+  {
+    "id": "q18",
+    "split": "dev",
+    "question": "How did an o1-preview-based agent perform on Spider 2.0 compared with Spider 1.0?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 7,
+        "evidence": "an o1-preview-based agent solved only 17.0% of Spider 2.0 tasks, compared with 91.2% on Spider 1.0 and 73.0% on BIRD"
+      }
+    ],
+    "expected_answer": "17.0% on Spider 2.0 versus 91.2% on Spider 1.0",
+    "answerable": true,
+    "day6_split": "test"
+  },
+  {
+    "id": "q19",
+    "split": "dev",
+    "question": "In the section on evaluation challenges, what did expert audits report about BIRD Mini-Dev and Spider 2.0-Snow?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 14,
+        "evidence": "recent expert audits report annotation errors in more than half of the examined instances"
+      }
+    ],
+    "expected_answer": "Annotation errors in more than half of the examined instances",
+    "filter": {
+      "section": "4.8 Challenges in Evaluation"
+    },
+    "answerable": true,
+    "day6_split": "test"
+  },
+  {
+    "id": "q20",
+    "split": "dev",
+    "question": "What does turning the phrase 'last year' into SQL require?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 5,
+        "evidence": "requires both contextual knowledge and dynamic value grounding against the database"
+      }
+    ],
+    "expected_answer": "Contextual knowledge and dynamic value grounding against the database to get a concrete date range",
+    "answerable": true,
+    "day6_split": "test"
+  },
+  {
+    "id": "t01",
+    "split": "test",
+    "question": "In Arctic-Text2SQL-R1, what reward does a query get if it is syntactically valid and executes but returns a different result from the gold result?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 17,
+        "evidence": "0.1 if the query is syntactically valid and executes but returns a different result"
+      }
+    ],
+    "expected_answer": "0.1 (1 for a matching result, 0 otherwise)",
+    "answerable": true
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "question": "What execution accuracy did Databricks RLVR-32B reach on the BIRD test set, both single-generation and with self-consistency?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 17,
+        "evidence": "73.56% execution accuracy on the BIRD test set in the singlemodel, single-generation setting (surpassing the previous best single-model result of 71.83%) and 75.68% with self-consistency"
+      }
+    ],
+    "expected_answer": "73.56% single-generation and 75.68% with self-consistency",
+    "answerable": true
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "question": "In MAC-SQL, what does the Selector agent do?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 24,
+        "evidence": "The Selector filters the schema to retain only relevant tables and columns, reducing token overhead"
+      }
+    ],
+    "expected_answer": "It filters the schema to keep only relevant tables and columns, reducing token overhead",
+    "answerable": true
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "question": "What execution accuracy does SQL-of-Thought report on Spider-Syn?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 25,
+        "evidence": "strong robustness on Spider-Realistic (90.2%) and Spider-Syn (82.0%)"
+      }
+    ],
+    "expected_answer": "82.0%",
+    "answerable": true
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "question": "What are the four phases of the interaction protocol that TRUST-SQL imposes?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 20,
+        "evidence": "Explore(schema-discovery tool calls such as table listing, column inspection, and row sampling),Propose(explicit commitment to a verified subset of tables, columns, and join paths),Generate(SQL conditioned on the proposed schema), andConfirm(execution and validation of the result)"
+      }
+    ],
+    "expected_answer": "Explore, Propose, Generate and Confirm",
+    "answerable": true
+  },
+  {
+    "id": "t06",
+    "split": "test",
+    "question": "In the section on agentic methods, what format is the semantic model at the core of Snowflake Cortex Analyst encoded in?",
+    "gold": [
+      {
+        "source_id": "2026Reimagining-Text-to-SQL",
+        "page": 23,
+        "evidence": "a semantic model encoded in YAML that captures domain-specific table and column metadata, relationships, and synonyms"
+      }
+    ],
+    "expected_answer": "YAML",
+    "filter": {
+      "section": "5.4 Agentic Methods"
+    },
+    "answerable": true
+  },
+  {
+    "id": "u01",
+    "split": "dev",
+    "question": "What execution accuracy did GPT-4o reach on the KaggleDBQA benchmark?",
+    "absence_reason": "The survey never mentions KaggleDBQA or GPT-4o. Full-text scan of all 47 pages (252 fixed-size + 199 paragraph chunks, case-insensitive) found no occurrence of: 'kaggledbqa', 'kaggle', 'gpt-4o', 'gpt4o'.",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "u02",
+    "split": "dev",
+    "question": "How many annotator hours were spent building the Spider 2.0 benchmark?",
+    "absence_reason": "Spider 2.0 is described (632 workflows) but no annotation effort or hours are reported. Full-text scan of all 47 pages (252 fixed-size + 199 paragraph chunks, case-insensitive) found no occurrence of: 'hours', 'person-hour'.",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "u03",
+    "split": "test",
+    "question": "How many questions does the Dr.Spider perturbation benchmark contain for each perturbation type?",
+    "absence_reason": "Dr.Spider is not covered by the survey. Full-text scan of all 47 pages (252 fixed-size + 199 paragraph chunks, case-insensitive) found no occurrence of: 'dr.spider', 'dr. spider', 'perturb'.",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "u04",
+    "split": "test",
+    "question": "What accuracy does the survey report for systems evaluated on the EHRSQL electronic health record benchmark?",
+    "absence_reason": "Healthcare is mentioned only as an application domain; EHRSQL is not covered. Full-text scan of all 47 pages (252 fixed-size + 199 paragraph chunks, case-insensitive) found no occurrence of: 'ehrsql', 'electronic health'.",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  }
+]

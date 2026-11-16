@@ -1,0 +1,210 @@
+{
+  "config": "D_bm25_b3000_latest",
+  "split": "dev",
+  "model": "gpt-6-luna",
+  "retriever": "bm25",
+  "top_k": 3,
+  "budget_chars": 3000,
+  "max_searches": 3,
+  "context_policy": "latest_first",
+  "reasoning_effort": "none",
+  "errors": 0,
+  "auto_proxy_NOT_manual_grades": {
+    "answered_of_answerable": "20/20",
+    "context_has_gold_evidence": "18/20",
+    "a_cited_chunk_has_gold_evidence": "18/20",
+    "abstained_of_unanswerable": "2/2",
+    "false_abstentions": "0/20"
+  },
+  "search_calls_distribution": {
+    "0": 0,
+    "1": 16,
+    "2": 3,
+    "3": 3
+  },
+  "tokens": {
+    "prompt_tokens": 36129,
+    "completion_tokens": 2657,
+    "total_tokens": 38786
+  },
+  "median_seconds": 3.325,
+  "service_cost_usd": "not computed: model price unknown; token counts recorded",
+  "rows": [
+    {
+      "id": "q01",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q02",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 2,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q03",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q04",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q05",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 3,
+      "ctx_hit": false,
+      "cited_hit": false
+    },
+    {
+      "id": "q06",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q07",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q08",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q09",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 2,
+      "ctx_hit": false,
+      "cited_hit": false
+    },
+    {
+      "id": "q10",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q11",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q12",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q13",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q14",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q15",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q16",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q17",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q18",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q19",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "q20",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 2,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "u01",
+      "answerable": false,
+      "status": "abstain",
+      "n_search": 3,
+      "ctx_hit": null,
+      "cited_hit": null
+    },
+    {
+      "id": "u02",
+      "answerable": false,
+      "status": "abstain",
+      "n_search": 3,
+      "ctx_hit": null,
+      "cited_hit": null
+    }
+  ]
+}

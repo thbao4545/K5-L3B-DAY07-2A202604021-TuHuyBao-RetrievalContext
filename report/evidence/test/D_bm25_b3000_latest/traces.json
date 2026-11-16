@@ -1,0 +1,1454 @@
+[
+  {
+    "query_id": "t01",
+    "question": "In Arctic-Text2SQL-R1, what reward does a query get if it is syntactically valid and executes but returns a different result from the gold result?",
+    "filter": null,
+    "config": "D_bm25_b3000_latest",
+    "model": "gpt-6-luna",
+    "status": "answered",
+    "answer": "It gets a reward of 0.1 if it is syntactically valid, executes, and returns a different result from the gold result. [2026Reimagining-Text-to-SQL:p17:paragraph:1]",
+    "citations": [
+      "2026Reimagining-Text-to-SQL:p17:paragraph:1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Arctic-Text2SQL-R1 reward syntactically valid query executes different result from gold result reward value",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p17:paragraph:1",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 17,
+            "text": "The reward is deliberately simple: 1 if the query’s execution result matches the gold result, 0.1 if the query is syntactically valid and executes but returns a different result, and 0 otherwise. Combined with carefully filtered training data, strong supervised initialization (from OmniSQL checkpoints), and online training, this simple reward lets the model handle SQL aliasing and semantically equivalent variants naturally, and even the 7B variant matches earlier 70B-class systems. Databricks RLVR-32B: Reinforcement Learning with Verifiable Rewards.Databricks Mosaic Research advanced Text-to-SQL reasoning through reinforcement learning with verifiable rewards (RLVR) [1, 16]. Unlike approaches that depend on proxy or learned reward models, RLVR exploits rewards derived directly from the correctness of SQL execution, simplifying the training pipeline and grounding supervision in the task itself.",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4180,
+              "chunk_index": 1
+            },
+            "score": 35.48615693382353,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p17:paragraph:0",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 17,
+            "text": "performance on the BIRD test set (81.67% EX) while making the trade-off between inference cost and accuracy explicit. Gemini 2.5 Pro [27] serves as a backbone LLM in the pipeline. Arctic-Text2SQL-R1 (Snowflake, May 2025).Arctic-Text2SQL-R1 [ 92] reached the top of the BIRD leaderboard at the time of its release in the single-model, single-inference category: its 32B variant achieves 71.83% execution accuracy on the BIRD test set and 70.5% on the development set. The model adopts an execution-centric training recipe that directly optimizes for semantic correctness under database execution rather than relying on syntax-level supervision. It usesGroup Relative Policy Optimization (GRPO)[70], which samples a group of SQL candidates for each question, executes them, and updates the policy according to their outcomes relative to the group mean, without a separate reward or value model.",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4180,
+              "chunk_index": 0
+            },
+            "score": 22.24766658907385,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p3:paragraph:1",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 3,
+            "text": "Coverage of reinforcement learning and reasoning models.We are the first survey to systematically cover the RL-based reasoning paradigm as a distinct methodological axis, including GRPO-based training (Arctic-R1, SQL-R1), verifiable-reward frameworks (RLVR), composite reward designs (Reasoning-SQL), DPO-based approaches (ExCoT), and the 2026 wave of datacentric and multi-turn RL methods (ReViSQL, SQL-Trail, TRUST-SQL). These methods now occupy the top positions on the BIRD leaderboard and are absent from prior surveys. 2. Unified five-paradigm taxonomy.We propose a taxonomy that unifies approaches along five complementary paradigms (in-context learning, fine-tuning (full and parameter-efficient), agentic and tool-augmented methods, RAG-based approaches, and reinforcement learning), with explicit cross-cutting hybrid categories (Figure 1). Prior surveys typically use two- or three-way splits (prompt engineering vs. fine-tuning, or ICL vs. fine-tuning vs.",
+            "metadata": {
+              "empty": false,
+              "section": "1.1 Relationship to Existing Surveys",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4123,
+              "chunk_index": 1
+            },
+            "score": 14.606608265810507,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p17:paragraph:1 | 2026Reimagining-Text-to-SQL.pdf | page 17]\nThe reward is deliberately simple: 1 if the query’s execution result matches the gold result, 0.1 if the query is syntactically valid and executes but returns a different result, and 0 otherwise. Combined with carefully filtered training data, strong supervised initialization (from OmniSQL checkpoints), and online training, this simple reward lets the model handle SQL aliasing and semantically equivalent variants naturally, and even the 7B variant matches earlier 70B-class systems. Databricks RLVR-32B: Reinforcement Learning with Verifiable Rewards.Databricks Mosaic Research advanced Text-to-SQL reasoning through reinforcement learning with verifiable rewards (RLVR) [1, 16]. Unlike approaches that depend on proxy or learned reward models, RLVR exploits rewards derived directly from the correctness of SQL execution, simplifying the training pipeline and grounding supervision in the task itself.\n\n[2026Reimagining-Text-to-SQL:p17:paragraph:0 | 2026Reimagining-Text-to-SQL.pdf | page 17]\nperformance on the BIRD test set (81.67% EX) while making the trade-off between inference cost and accuracy explicit. Gemini 2.5 Pro [27] serves as a backbone LLM in the pipeline. Arctic-Text2SQL-R1 (Snowflake, May 2025).Arctic-Text2SQL-R1 [ 92] reached the top of the BIRD leaderboard at the time of its release in the single-model, single-inference category: its 32B variant achieves 71.83% execution accuracy on the BIRD test set and 70.5% on the development set. The model adopts an execution-centric training recipe that directly optimizes for semantic correctness under database execution rather than relying on syntax-level supervision. It usesGroup Relative Policy Optimization (GRPO)[70], which samples a group of SQL candidates for each question, executes them, and updates the policy according to their outcomes relative to the group mean, without a separate reward or value model.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p17:paragraph:1",
+          "2026Reimagining-Text-to-SQL:p17:paragraph:0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_llm_calls": 2,
+    "llm_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "Arctic-Text2SQL-R1 reward syntactically valid query executes different result from gold result reward value"
+        },
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 37,
+          "total_tokens": 404,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.429
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "It gets a reward of 0.1 if it is syntactically valid, executes, and returns a different result from the gold result. [2026Reimagining-Text-to-SQL:p17:paragraph:1]",
+          "citations": [
+            "2026Reimagining-Text-to-SQL:p17:paragraph:1"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 829,
+          "completion_tokens": 83,
+          "total_tokens": 912,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.936
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1196,
+      "completion_tokens": 120,
+      "total_tokens": 1316
+    },
+    "seconds": 3.37
+  },
+  {
+    "query_id": "t02",
+    "question": "What execution accuracy did Databricks RLVR-32B reach on the BIRD test set, both single-generation and with self-consistency?",
+    "filter": null,
+    "config": "D_bm25_b3000_latest",
+    "model": "gpt-6-luna",
+    "status": "answered",
+    "answer": "Databricks RLVR-32B reached 73.56% execution accuracy in single-generation and 75.68% with self-consistency on the BIRD test set [2026Reimagining-Text-to-SQL:p17:paragraph:2].",
+    "citations": [
+      "2026Reimagining-Text-to-SQL:p17:paragraph:2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Databricks RLVR-32B BIRD test set execution accuracy single-generation self-consistency",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p17:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 17,
+            "text": "Starting from Qwen2.5-32B-Coder-Instruct [ 65], the team first warm-started the model with Test-time Adaptive Optimization (TAO), an offline RL method, and then applied online RLVR training. Using no data beyond the BIRD training set and no proprietary models, the resulting model reached 73.56% execution accuracy on the BIRD test set in the singlemodel, single-generation setting (surpassing the previous best single-model result of 71.83%) and 75.68% with self-consistency, highlighting the effectiveness of simple verifiable rewards for enterprise-grade Text-to-SQL. ExCoT: Execution-Guided Chain-of-Thought (Snowflake, March 2025).ExCoT [ 95] combines chain-of-thought reasoning withDirect Preference Optimization (DPO)[ 66] to improve both interpretability and execution accuracy. The 32B and 70B variants of Arctic-ExCoT achieve 68.19% and 68.53% execution accuracy, respectively, on the BIRD test set. ExCoT uses a two-phase training pipeline.",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4180,
+              "chunk_index": 2
+            },
+            "score": 29.01782943046863,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p17:paragraph:0",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 17,
+            "text": "performance on the BIRD test set (81.67% EX) while making the trade-off between inference cost and accuracy explicit. Gemini 2.5 Pro [27] serves as a backbone LLM in the pipeline. Arctic-Text2SQL-R1 (Snowflake, May 2025).Arctic-Text2SQL-R1 [ 92] reached the top of the BIRD leaderboard at the time of its release in the single-model, single-inference category: its 32B variant achieves 71.83% execution accuracy on the BIRD test set and 70.5% on the development set. The model adopts an execution-centric training recipe that directly optimizes for semantic correctness under database execution rather than relying on syntax-level supervision. It usesGroup Relative Policy Optimization (GRPO)[70], which samples a group of SQL candidates for each question, executes them, and updates the policy according to their outcomes relative to the group mean, without a separate reward or value model.",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4180,
+              "chunk_index": 0
+            },
+            "score": 18.13377181053736,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p4:paragraph:0",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 4,
+            "text": "Text-to-SQL Systems In-Context Learning (Sec. 5.1) Decomposition & CoT prompting DIN-SQL; Chain-of-Thought; Self-Consistency Demonstration selection DAIL-SQL; DCG-SQL Reinforcement Learning & Reasoning (Sec. 5.2) Policy optimization (GRPO) Arctic-Text2SQL-R1; SQL-R1; Reasoning-SQL; Think2SQL Verifiable & preference rewards Databricks RLVR-32B; ExCoT (DPO); ReViSQL Multi-turn agentic RL SQL-Trail; TRUST-SQL Test-time scaling (hybrid) Agentar-Scale-SQL Fine-Tuning (Sec. 5.3) Full-parameter Knowledge-to-SQL; SGU-SQL; SQL-Llama (MAC-SQL);CLLMs; StructLM Parameter-efficient (PEFT) FinSQL; SingSQL-LM; LoRA / QLoRA Knowledge injection Domain database knowledge injection Agentic Methods (Sec. 5.4) Multi-agent pipelines MAC-SQL; SQL-of-Thought; MAG-SQL; THOR;LinkedIn KG agents; Cortex Analyst Tool-enhanced & execution-guided CHASE-SQL; ReFoRCE; Tool-SQL; Interactive-T2S Correction & reliability SQLFixAgent; SHARE; RTS / RTS+ RAG-Based (Sec.",
+            "metadata": {
+              "empty": false,
+              "section": "2.1 Text-to-SQL Task Definition",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 2539,
+              "chunk_index": 0
+            },
+            "score": 17.463155164418517,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p17:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 17]\nStarting from Qwen2.5-32B-Coder-Instruct [ 65], the team first warm-started the model with Test-time Adaptive Optimization (TAO), an offline RL method, and then applied online RLVR training. Using no data beyond the BIRD training set and no proprietary models, the resulting model reached 73.56% execution accuracy on the BIRD test set in the singlemodel, single-generation setting (surpassing the previous best single-model result of 71.83%) and 75.68% with self-consistency, highlighting the effectiveness of simple verifiable rewards for enterprise-grade Text-to-SQL. ExCoT: Execution-Guided Chain-of-Thought (Snowflake, March 2025).ExCoT [ 95] combines chain-of-thought reasoning withDirect Preference Optimization (DPO)[ 66] to improve both interpretability and execution accuracy. The 32B and 70B variants of Arctic-ExCoT achieve 68.19% and 68.53% execution accuracy, respectively, on the BIRD test set. ExCoT uses a two-phase training pipeline.\n\n[2026Reimagining-Text-to-SQL:p17:paragraph:0 | 2026Reimagining-Text-to-SQL.pdf | page 17]\nperformance on the BIRD test set (81.67% EX) while making the trade-off between inference cost and accuracy explicit. Gemini 2.5 Pro [27] serves as a backbone LLM in the pipeline. Arctic-Text2SQL-R1 (Snowflake, May 2025).Arctic-Text2SQL-R1 [ 92] reached the top of the BIRD leaderboard at the time of its release in the single-model, single-inference category: its 32B variant achieves 71.83% execution accuracy on the BIRD test set and 70.5% on the development set. The model adopts an execution-centric training recipe that directly optimizes for semantic correctness under database execution rather than relying on syntax-level supervision. It usesGroup Relative Policy Optimization (GRPO)[70], which samples a group of SQL candidates for each question, executes them, and updates the policy according to their outcomes relative to the group mean, without a separate reward or value model.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p17:paragraph:2",
+          "2026Reimagining-Text-to-SQL:p17:paragraph:0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_llm_calls": 2,
+    "llm_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "Databricks RLVR-32B BIRD test set execution accuracy single-generation self-consistency"
+        },
+        "usage": {
+          "prompt_tokens": 362,
+          "completion_tokens": 34,
+          "total_tokens": 396,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.438
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "Databricks RLVR-32B reached 73.56% execution accuracy in single-generation and 75.68% with self-consistency on the BIRD test set [2026Reimagining-Text-to-SQL:p17:paragraph:2].",
+          "citations": [
+            "2026Reimagining-Text-to-SQL:p17:paragraph:2"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 878,
+          "completion_tokens": 89,
+          "total_tokens": 967,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.822
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1240,
+      "completion_tokens": 123,
+      "total_tokens": 1363
+    },
+    "seconds": 3.26
+  },
+  {
+    "query_id": "t03",
+    "question": "In MAC-SQL, what does the Selector agent do?",
+    "filter": null,
+    "config": "D_bm25_b3000_latest",
+    "model": "gpt-6-luna",
+    "status": "answered",
+    "answer": "The Selector filters the database schema to keep only relevant tables and columns, reducing token overhead. [2026Reimagining-Text-to-SQL:p24:paragraph:4]",
+    "citations": [
+      "2026Reimagining-Text-to-SQL:p24:paragraph:4"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "MAC-SQL Selector agent role what does Selector do schema table selection",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p24:paragraph:4",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 24,
+            "text": "MAC-SQL.MAC-SQL [ 80] proposes a multi-agent collaborative pipeline comprising three agents: aSelector, aDecomposer, and aRefiner. The Selector filters the schema to retain only relevant tables and columns, reducing token overhead; the Decomposer applies chain-of-thought reasoning to break complex questions into sub-problems; and the Refiner executes candidate queries, collects errors or empty results, and iteratively fixes the outputs using this feedback. The framework is instantiated with GPT-4 for maximum accuracy and with SQL-Llama (Section 5.3) for open-source deployment. MAC-SQL set a new state of the art on BIRD at the time of publication (59.59% execution accuracy on the test set) and is competitive on Spider; its ablations show that each agent contributes to performance, confirming the value of multi-agent collaboration and error recovery. 24",
+            "metadata": {
+              "empty": false,
+              "section": "5.4 Agentic Methods",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4371,
+              "chunk_index": 4
+            },
+            "score": 16.477619548158714,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p22:paragraph:0",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 22,
+            "text": "MAC-SQL releases SQL-Llama, an open-source model obtained by instruction-tuning Code Llama7B [68] on agent-specific instruction data covering the Selector, Decomposer, and Refiner roles. A single fine-tuned model can then play all three agents, recovering much of the GPT-4 variant’s accuracy with a far smaller, locally deployable model. • CLLMs[ 41] (Consistency Large Language Models) target inference efficiency rather than accuracy. They fine-tune an LLM so that it maps any intermediate state of a Jacobi (parallel) decoding trajectory directly to the final fixed point, allowing several tokens to be generated per step. On Text-to-SQL, a DeepSeek-Coder-7B model fine-tuned on Spider with this consistency objective decodes several times faster while preserving generation quality, illustrating how fine-tuning can reduce latency in interactive Text-to-SQL deployments. • StructLM[ 101] is a generalist model for structured knowledge grounding.",
+            "metadata": {
+              "empty": false,
+              "section": "5.3 Fine-Tuning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3777,
+              "chunk_index": 0
+            },
+            "score": 11.762443289697655,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p16:paragraph:4",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 16,
+            "text": "Generated queries undergo a bounded iterative refinement loop in which each candidate is executed in a sandbox, execution errors and result summaries guide targeted repairs, and repaired candidates are re-executed. Candidates are then grouped by execution equivalence and ranked by a tournament-style selector trained with reinforcement learning to prefer candidates that maximize execution accuracy; this learned selector leverages question skeletons, light-schema context, and execution evidence to outperform naive voting. The two paths are complementary: the ICL path increases coverage of rare and complex SQL skeletons, while the RL reasoning path provides higher executability and stability. The system attains state-of-the-art 16",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4291,
+              "chunk_index": 4
+            },
+            "score": 11.671846524199701,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p24:paragraph:4 | 2026Reimagining-Text-to-SQL.pdf | page 24]\nMAC-SQL.MAC-SQL [ 80] proposes a multi-agent collaborative pipeline comprising three agents: aSelector, aDecomposer, and aRefiner. The Selector filters the schema to retain only relevant tables and columns, reducing token overhead; the Decomposer applies chain-of-thought reasoning to break complex questions into sub-problems; and the Refiner executes candidate queries, collects errors or empty results, and iteratively fixes the outputs using this feedback. The framework is instantiated with GPT-4 for maximum accuracy and with SQL-Llama (Section 5.3) for open-source deployment. MAC-SQL set a new state of the art on BIRD at the time of publication (59.59% execution accuracy on the test set) and is competitive on Spider; its ablations show that each agent contributes to performance, confirming the value of multi-agent collaboration and error recovery. 24\n\n[2026Reimagining-Text-to-SQL:p22:paragraph:0 | 2026Reimagining-Text-to-SQL.pdf | page 22]\nMAC-SQL releases SQL-Llama, an open-source model obtained by instruction-tuning Code Llama7B [68] on agent-specific instruction data covering the Selector, Decomposer, and Refiner roles. A single fine-tuned model can then play all three agents, recovering much of the GPT-4 variant’s accuracy with a far smaller, locally deployable model. • CLLMs[ 41] (Consistency Large Language Models) target inference efficiency rather than accuracy. They fine-tune an LLM so that it maps any intermediate state of a Jacobi (parallel) decoding trajectory directly to the final fixed point, allowing several tokens to be generated per step. On Text-to-SQL, a DeepSeek-Coder-7B model fine-tuned on Spider with this consistency objective decodes several times faster while preserving generation quality, illustrating how fine-tuning can reduce latency in interactive Text-to-SQL deployments. • StructLM[ 101] is a generalist model for structured knowledge grounding.\n\n[2026Reimagining-Text-to-SQL:p16:paragraph:4 | 2026Reimagining-Text-to-SQL.pdf | page 16]\nGenerated queries undergo a bounded iterative refinement loop in which each candidate is executed in a sandbox, execution errors and result summaries guide targeted repairs, and repaired candidates are re-executed. Candidates are then grouped by execution equivalence and ranked by a tournament-style selector trained with reinforcement learning to prefer candidates that maximize execution accuracy; this learned selector leverages question skeletons, light-schema context, and execution evidence to outperform naive voting. The two paths are complementary: the ICL path increases coverage of rare and complex SQL skeletons, while the RL reasoning path provides higher executability and stability. The system attains state-of-the-art 16",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p24:paragraph:4",
+          "2026Reimagining-Text-to-SQL:p22:paragraph:0",
+          "2026Reimagining-Text-to-SQL:p16:paragraph:4"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_llm_calls": 2,
+    "llm_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "MAC-SQL Selector agent role what does Selector do schema table selection"
+        },
+        "usage": {
+          "prompt_tokens": 345,
+          "completion_tokens": 28,
+          "total_tokens": 373,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.612
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "The Selector filters the database schema to keep only relevant tables and columns, reducing token overhead. [2026Reimagining-Text-to-SQL:p24:paragraph:4]",
+          "citations": [
+            "2026Reimagining-Text-to-SQL:p24:paragraph:4"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 966,
+          "completion_tokens": 72,
+          "total_tokens": 1038,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.727
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1311,
+      "completion_tokens": 100,
+      "total_tokens": 1411
+    },
+    "seconds": 3.34
+  },
+  {
+    "query_id": "t04",
+    "question": "What execution accuracy does SQL-of-Thought report on Spider-Syn?",
+    "filter": null,
+    "config": "D_bm25_b3000_latest",
+    "model": "gpt-6-luna",
+    "status": "answered",
+    "answer": "SQL-of-Thought reports 82.0% execution accuracy on Spider-Syn [2026Reimagining-Text-to-SQL:p25:paragraph:1].",
+    "citations": [
+      "2026Reimagining-Text-to-SQL:p25:paragraph:1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "SQL-of-Thought execution accuracy Spider-Syn reported result",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p25:paragraph:1",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 25,
+            "text": "The approach attains state-of-the-art execution accuracy on the Spider development set (91.6%) and strong robustness on Spider-Realistic (90.2%) and Spider-Syn (82.0%), with a very high rate of valid SQL; ablations show that removing either the query-planning stage or the taxonomy-guided correction loop causes substantial accuracy drops. The authors also characterize practical trade-offs: multi-agent planning and iterative correction substantially increase token and latency costs, and they suggest hybrid deployments (stronger models for planning, cheaper models for generation) to balance cost and performance. SQL-of-Thought is therefore particularly attractive when correctness and auditability are priorities, albeit at higher compute and engineering cost. CHASE-SQL: multi-path reasoning and candidate selection.Traditional Text-to-SQL systems often rely on single-shot generation, which limits their robustness on complex queries.",
+            "metadata": {
+              "empty": false,
+              "section": "5.4 Agentic Methods",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4568,
+              "chunk_index": 1
+            },
+            "score": 11.772633462776634,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p17:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 17,
+            "text": "Starting from Qwen2.5-32B-Coder-Instruct [ 65], the team first warm-started the model with Test-time Adaptive Optimization (TAO), an offline RL method, and then applied online RLVR training. Using no data beyond the BIRD training set and no proprietary models, the resulting model reached 73.56% execution accuracy on the BIRD test set in the singlemodel, single-generation setting (surpassing the previous best single-model result of 71.83%) and 75.68% with self-consistency, highlighting the effectiveness of simple verifiable rewards for enterprise-grade Text-to-SQL. ExCoT: Execution-Guided Chain-of-Thought (Snowflake, March 2025).ExCoT [ 95] combines chain-of-thought reasoning withDirect Preference Optimization (DPO)[ 66] to improve both interpretability and execution accuracy. The 32B and 70B variants of Arctic-ExCoT achieve 68.19% and 68.53% execution accuracy, respectively, on the BIRD test set. ExCoT uses a two-phase training pipeline.",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4180,
+              "chunk_index": 2
+            },
+            "score": 9.545316246631101,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p37:paragraph:1",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 37,
+            "text": "SQL-GEN delivers consistent gains (up to about 20% in execution accuracy) across dialect benchmarks and is strongly complementary to limited human-labeled data. Its novelty lies in explicitly modeling SQL dialects during synthetic generation and in a practical model-merging recipe for multi-dialect systems. DSQG-Syn.DSQG-Syn [ 19] is a domain-constrained synthetic data generation framework designed to produce high-fidelity NL–SQL pairs for specialized and regulated databases where annotated data are scarce. Unlike query-first pipelines, it adopts aquestion-firstparadigm: domain-relevant questions are generated from schema keywords and a curated taxonomy of SQL reasoning types (e.g., aggregation, joins, and set operations), followed by schema-linking-driven SQL skeleton generation that decouples logical structure from schema instantiation.",
+            "metadata": {
+              "empty": false,
+              "section": "9.6 Debugging User SQL: SWE-SQL",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4028,
+              "chunk_index": 1
+            },
+            "score": 7.726720766090699,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p25:paragraph:1 | 2026Reimagining-Text-to-SQL.pdf | page 25]\nThe approach attains state-of-the-art execution accuracy on the Spider development set (91.6%) and strong robustness on Spider-Realistic (90.2%) and Spider-Syn (82.0%), with a very high rate of valid SQL; ablations show that removing either the query-planning stage or the taxonomy-guided correction loop causes substantial accuracy drops. The authors also characterize practical trade-offs: multi-agent planning and iterative correction substantially increase token and latency costs, and they suggest hybrid deployments (stronger models for planning, cheaper models for generation) to balance cost and performance. SQL-of-Thought is therefore particularly attractive when correctness and auditability are priorities, albeit at higher compute and engineering cost. CHASE-SQL: multi-path reasoning and candidate selection.Traditional Text-to-SQL systems often rely on single-shot generation, which limits their robustness on complex queries.\n\n[2026Reimagining-Text-to-SQL:p17:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 17]\nStarting from Qwen2.5-32B-Coder-Instruct [ 65], the team first warm-started the model with Test-time Adaptive Optimization (TAO), an offline RL method, and then applied online RLVR training. Using no data beyond the BIRD training set and no proprietary models, the resulting model reached 73.56% execution accuracy on the BIRD test set in the singlemodel, single-generation setting (surpassing the previous best single-model result of 71.83%) and 75.68% with self-consistency, highlighting the effectiveness of simple verifiable rewards for enterprise-grade Text-to-SQL. ExCoT: Execution-Guided Chain-of-Thought (Snowflake, March 2025).ExCoT [ 95] combines chain-of-thought reasoning withDirect Preference Optimization (DPO)[ 66] to improve both interpretability and execution accuracy. The 32B and 70B variants of Arctic-ExCoT achieve 68.19% and 68.53% execution accuracy, respectively, on the BIRD test set. ExCoT uses a two-phase training pipeline.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p25:paragraph:1",
+          "2026Reimagining-Text-to-SQL:p17:paragraph:2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_llm_calls": 2,
+    "llm_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "SQL-of-Thought execution accuracy Spider-Syn reported result"
+        },
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 26,
+          "total_tokens": 373,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.463
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "SQL-of-Thought reports 82.0% execution accuracy on Spider-Syn [2026Reimagining-Text-to-SQL:p25:paragraph:1].",
+          "citations": [
+            "2026Reimagining-Text-to-SQL:p25:paragraph:1"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 829,
+          "completion_tokens": 70,
+          "total_tokens": 899,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.736
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1176,
+      "completion_tokens": 96,
+      "total_tokens": 1272
+    },
+    "seconds": 3.2
+  },
+  {
+    "query_id": "t05",
+    "question": "What are the four phases of the interaction protocol that TRUST-SQL imposes?",
+    "filter": null,
+    "config": "D_bm25_b3000_latest",
+    "model": "gpt-6-luna",
+    "status": "answered",
+    "answer": "The four phases are **Explore** (discover schema), **Propose** (commit to verified tables, columns, and join paths), **Generate** (produce SQL conditioned on the proposed schema), and **Confirm** (execute and validate the result) [2026Reimagining-Text-to-SQL:p20:paragraph:2].",
+    "citations": [
+      "2026Reimagining-Text-to-SQL:p20:paragraph:2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "TRUST-SQL four phases interaction protocol",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p20:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 20,
+            "text": "The task is formulated as a partially observable Markov decision process whose hidden state is the full schema and whose observations are limited to what the agent’s metadata-inspection tools return. On top of this formulation, TRUST-SQL imposes afour-phase interaction protocol:Explore(schema-discovery tool calls such as table listing, column inspection, and row sampling),Propose(explicit commitment to a verified subset of tables, columns, and join paths),Generate(SQL conditioned on the proposed schema), andConfirm(execution and validation of the result). The Propose phase acts as amandatory cognitive checkpoint: in a pilot study, schema hallucinations (references to tables or columns that do not exist) account for 26.4% of failures in a vanilla execution-correction baseline, 14.2% when execution feedback alone is added, and only 2.8% once the Propose checkpoint is introduced (a 9.4-fold reduction).",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4459,
+              "chunk_index": 2
+            },
+            "score": 9.228455097605638,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p20:paragraph:4",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 20,
+            "text": "Holding the protocol, backbone, and training data constant, Dual-Track GRPO yields a 9.9% relative improvement over standard GRPO. Training uses Qwen3-4B and Qwen3-8B backbones, with a supervised cold-start phase followed by Dual-Track GRPO with PPO-style clipped updates. Across five Text-to-SQL benchmarks, TRUSTSQL delivers average absolute execution-accuracy improvements of30.6points for the 4B variant and 16.6points for the 8B variant over their respective base models; the larger gain for the smaller model suggests that structured agentic protocols benefit compact models disproportionately. Most importantly for deployment, TRUST-SQL operates entirelywithout a preloaded schemayet consistently matches or surpasses strong baselines that rely on full schema injection. 20",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4459,
+              "chunk_index": 4
+            },
+            "score": 6.956655028980517,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p20:paragraph:0",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 20,
+            "text": "discovered relevant schema information). This dense reward addresses the sparsity of binary execution rewards and lets the policy learnwhich turn-level decisionscontributed to success. Training proceeds in two phases on a Qwen2.5-Coder backbone: a supervised cold-start phase teaches the reasoning–action– observation format, followed by GRPO-style RL with PPO-style clipped policy updates. SQL-Trail outperforms its single-pass RL counterpart trained on the same backbone and data, and on hard BIRD development questions it uses fewer turns than Claude 3.7 Sonnet while achieving higher execution accuracy. Ablations further show that removing the auxiliary shaping rewards slows convergence and lowers final performance, and that removing the SFT cold start prevents the model from learning the multi-turn format at all.",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4459,
+              "chunk_index": 0
+            },
+            "score": 5.004459126803987,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p20:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 20]\nThe task is formulated as a partially observable Markov decision process whose hidden state is the full schema and whose observations are limited to what the agent’s metadata-inspection tools return. On top of this formulation, TRUST-SQL imposes afour-phase interaction protocol:Explore(schema-discovery tool calls such as table listing, column inspection, and row sampling),Propose(explicit commitment to a verified subset of tables, columns, and join paths),Generate(SQL conditioned on the proposed schema), andConfirm(execution and validation of the result). The Propose phase acts as amandatory cognitive checkpoint: in a pilot study, schema hallucinations (references to tables or columns that do not exist) account for 26.4% of failures in a vanilla execution-correction baseline, 14.2% when execution feedback alone is added, and only 2.8% once the Propose checkpoint is introduced (a 9.4-fold reduction).\n\n[2026Reimagining-Text-to-SQL:p20:paragraph:4 | 2026Reimagining-Text-to-SQL.pdf | page 20]\nHolding the protocol, backbone, and training data constant, Dual-Track GRPO yields a 9.9% relative improvement over standard GRPO. Training uses Qwen3-4B and Qwen3-8B backbones, with a supervised cold-start phase followed by Dual-Track GRPO with PPO-style clipped updates. Across five Text-to-SQL benchmarks, TRUSTSQL delivers average absolute execution-accuracy improvements of30.6points for the 4B variant and 16.6points for the 8B variant over their respective base models; the larger gain for the smaller model suggests that structured agentic protocols benefit compact models disproportionately. Most importantly for deployment, TRUST-SQL operates entirelywithout a preloaded schemayet consistently matches or surpasses strong baselines that rely on full schema injection. 20\n\n[2026Reimagining-Text-to-SQL:p20:paragraph:0 | 2026Reimagining-Text-to-SQL.pdf | page 20]\ndiscovered relevant schema information). This dense reward addresses the sparsity of binary execution rewards and lets the policy learnwhich turn-level decisionscontributed to success. Training proceeds in two phases on a Qwen2.5-Coder backbone: a supervised cold-start phase teaches the reasoning–action– observation format, followed by GRPO-style RL with PPO-style clipped policy updates. SQL-Trail outperforms its single-pass RL counterpart trained on the same backbone and data, and on hard BIRD development questions it uses fewer turns than Claude 3.7 Sonnet while achieving higher execution accuracy. Ablations further show that removing the auxiliary shaping rewards slows convergence and lowers final performance, and that removing the SFT cold start prevents the model from learning the multi-turn format at all.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p20:paragraph:2",
+          "2026Reimagining-Text-to-SQL:p20:paragraph:4",
+          "2026Reimagining-Text-to-SQL:p20:paragraph:0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_llm_calls": 2,
+    "llm_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "TRUST-SQL four phases interaction protocol"
+        },
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 23,
+          "total_tokens": 372,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.412
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "The four phases are **Explore** (discover schema), **Propose** (commit to verified tables, columns, and join paths), **Generate** (produce SQL conditioned on the proposed schema), and **Confirm** (execute and validate the result) [2026Reimagining-Text-to-SQL:p20:paragraph:2].",
+          "citations": [
+            "2026Reimagining-Text-to-SQL:p20:paragraph:2"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 965,
+          "completion_tokens": 104,
+          "total_tokens": 1069,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.713
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1314,
+      "completion_tokens": 127,
+      "total_tokens": 1441
+    },
+    "seconds": 3.13
+  },
+  {
+    "query_id": "t06",
+    "question": "In the section on agentic methods, what format is the semantic model at the core of Snowflake Cortex Analyst encoded in?",
+    "filter": {
+      "section": "5.4 Agentic Methods"
+    },
+    "config": "D_bm25_b3000_latest",
+    "model": "gpt-6-luna",
+    "status": "answered",
+    "answer": "The semantic model is encoded in YAML. [2026Reimagining-Text-to-SQL:p23:paragraph:3]",
+    "citations": [
+      "2026Reimagining-Text-to-SQL:p23:paragraph:3"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Snowflake Cortex Analyst semantic model core encoded format agentic methods YAML",
+        "filter": {
+          "section": "5.4 Agentic Methods"
+        },
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p23:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 23,
+            "text": "Cortex Analyst (Snowflake).Cortex Analyst [ 74] is Snowflake’s enterprise-grade agentic framework for Text-to-SQL, designed to let non-technical users interact with structured data. At its core is a semantic model encoded in YAML that captures domain-specific table and column metadata, relationships, and synonyms. An orchestrator coordinates several specialized components: a relationships agent infers join paths, a semantic-model editor updates metadata using execution traces, a custom-instruction agent injects domain-specific behavior, and an evaluator agent performs multi-step validation. SQL generation is guided by Claude 3.5 Sonnet and refined through an execution-feedback loop. Snowflake reports roughly 90% execution accuracy on real-world business-intelligence datasets, an improvement of about 20–30% over LLM-only approaches.",
+            "metadata": {
+              "empty": false,
+              "section": "5.4 Agentic Methods",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3739,
+              "chunk_index": 3
+            },
+            "score": 34.437714444093466,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p23:paragraph:1",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 23,
+            "text": "5.4 Agentic Methods Agent-based approaches have emerged as a powerful paradigm for improving semantic alignment, modular interpretability, and execution correctness in complex query generation. By coordinating multiple LLM-driven agents and external tools, these systems decompose, validate, and refine SQL queries with higher accuracy and robustness than monolithic architectures. This section surveys a range of recent agentic frameworks that exemplify the shift toward collaborative, multi-step processing. ReFoRCE.ReFoRCE [ 17] addresses the practical failure modes of large-scale, cross-domain Textto-SQL by combining schema compression, execution-guided self-refinement, and selective column exploration in a single agentic pipeline. The system first reduces prompt bloat by grouping similarly named tables by pattern and retaining representative table DDLs and sample rows, and then runs a lightweight LLM-driven schema linker to select task-relevant tables and columns.",
+            "metadata": {
+              "empty": false,
+              "section": "5.4 Agentic Methods",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3739,
+              "chunk_index": 1
+            },
+            "score": 6.2966953534387935,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p26:paragraph:0",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 26,
+            "text": "SQLFixAgent.SQLFixAgent [ 7] improves semantic accuracy through a three-agent architecture consisting ofSQLReviewer,QueryCrafter, andSQLRefiner. SQLReviewer identifies syntactic and semantic errors using a simulated rubber-duck debugging strategy; QueryCrafter produces a diverse set of candidate repairs with a fine-tuned SQL generation model; and SQLRefiner selects the most appropriate query by leveraging a failure memory and similarity-based retrieval over past corrections. On BIRD, SQLFixAgent improves on prior methods by approximately 3%, achieves an executable-SQL rate of 89%, and reduces semantic error rates by 41%. The framework is model-agnostic and supports plug-and-play integration with LLMs such as GPT-4 and CodeLlama. THOR.THOR (Transformer Heuristics for On-Demand Retrieval) [ 72] is a production-focused Text-toSQL system for safe, read-only analytical querying over enterprise databases.",
+            "metadata": {
+              "empty": false,
+              "section": "5.4 Agentic Methods",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4314,
+              "chunk_index": 0
+            },
+            "score": 5.386325504580714,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p23:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 23]\nCortex Analyst (Snowflake).Cortex Analyst [ 74] is Snowflake’s enterprise-grade agentic framework for Text-to-SQL, designed to let non-technical users interact with structured data. At its core is a semantic model encoded in YAML that captures domain-specific table and column metadata, relationships, and synonyms. An orchestrator coordinates several specialized components: a relationships agent infers join paths, a semantic-model editor updates metadata using execution traces, a custom-instruction agent injects domain-specific behavior, and an evaluator agent performs multi-step validation. SQL generation is guided by Claude 3.5 Sonnet and refined through an execution-feedback loop. Snowflake reports roughly 90% execution accuracy on real-world business-intelligence datasets, an improvement of about 20–30% over LLM-only approaches.\n\n[2026Reimagining-Text-to-SQL:p23:paragraph:1 | 2026Reimagining-Text-to-SQL.pdf | page 23]\n5.4 Agentic Methods Agent-based approaches have emerged as a powerful paradigm for improving semantic alignment, modular interpretability, and execution correctness in complex query generation. By coordinating multiple LLM-driven agents and external tools, these systems decompose, validate, and refine SQL queries with higher accuracy and robustness than monolithic architectures. This section surveys a range of recent agentic frameworks that exemplify the shift toward collaborative, multi-step processing. ReFoRCE.ReFoRCE [ 17] addresses the practical failure modes of large-scale, cross-domain Textto-SQL by combining schema compression, execution-guided self-refinement, and selective column exploration in a single agentic pipeline. The system first reduces prompt bloat by grouping similarly named tables by pattern and retaining representative table DDLs and sample rows, and then runs a lightweight LLM-driven schema linker to select task-relevant tables and columns.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p23:paragraph:3",
+          "2026Reimagining-Text-to-SQL:p23:paragraph:1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_llm_calls": 2,
+    "llm_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "Snowflake Cortex Analyst semantic model core encoded format agentic methods YAML"
+        },
+        "usage": {
+          "prompt_tokens": 358,
+          "completion_tokens": 28,
+          "total_tokens": 386,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.226
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "The semantic model is encoded in YAML. [2026Reimagining-Text-to-SQL:p23:paragraph:3]",
+          "citations": [
+            "2026Reimagining-Text-to-SQL:p23:paragraph:3"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 778,
+          "completion_tokens": 62,
+          "total_tokens": 840,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 2.228
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1136,
+      "completion_tokens": 90,
+      "total_tokens": 1226
+    },
+    "seconds": 3.45
+  },
+  {
+    "query_id": "u03",
+    "question": "How many questions does the Dr.Spider perturbation benchmark contain for each perturbation type?",
+    "filter": null,
+    "config": "D_bm25_b3000_latest",
+    "model": "gpt-6-luna",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Dr.Spider perturbation benchmark number of questions per perturbation type",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p23:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 23,
+            "text": "Using the compressed context, the pipeline samples multiple SQL candidates, executes them in a sandbox, and invokes an LLMbased self-refinement loop that repairs syntax, dialect, and semantic errors. Candidates are aggregated by majority vote, and low-confidence cases trigger targeted, multi-threaded column probes whose sample values are fed back to the model for disambiguation. Ablations attribute most of the gains to the compression stage, and the combined generate–execute–refine–explore workflow achieved state-of-the-art results on Spider 2.0 (approximately 35.8% execution accuracy on the Snow split and 36.6% on the Lite split, with substantial EX@k gains), at the cost of a modest number of additional LLM and database calls per example. ReFoRCE thus illustrates a practical trade-off between prompt tractability, execution grounding, and inference cost for large, heterogeneous schemas.",
+            "metadata": {
+              "empty": false,
+              "section": "5.4 Agentic Methods",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3739,
+              "chunk_index": 2
+            },
+            "score": 7.752555264336021,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p7:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 7,
+            "text": "Comparative note.WikiSQL tests large-scale, single-table translation with limited SQL syntax, whereas Spider and BIRD evaluate full SQL expressivity and cross-schema generalization, together covering the breadth of Text-to-SQL challenges. 3.3 Conversational and Context-Dependent Benchmarks To address real-world dialogue scenarios, two conversational benchmarks extend Spider with multi-turn interactions: • SParC[ 91]: 4,298 coherent question sequences comprising more than 12K questions over Spider schemas, testing context retention, coreference resolution, and incremental query composition. • CoSQL[ 90]: a large-scale, cross-domain conversational Text-to-SQL benchmark comprising over 3,000 user–system dialogues (30,000+ turns) and 10,000+ annotated SQL queries across 200 complex databases spanning 138 domains.",
+            "metadata": {
+              "empty": false,
+              "section": "3.3 Conversational and Context-Dependent Benchmarks",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3612,
+              "chunk_index": 3
+            },
+            "score": 7.680685680701298,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p10:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 10,
+            "text": "Methodology.SQL2NL (i) ingests a gold SQL query and its schema description; (ii) prompts a generation model with constraints that encourage lexical and syntactic diversity while forbidding schemaidentifier leakage; (iii) validates paraphrase fidelity through automatic embedding-based checks and targeted human review of a sample; and (iv) evaluates NL-to-SQL systems by comparing execution accuracy on the original questions with that on the SQL2NL paraphrases. The framework supports weighted (human-adjusted) scoring so that low-quality paraphrases do not unduly penalize systems. SQL2NL can also produce augmented training data for robustness-oriented fine-tuning. Evaluation protocol and datasets.The authors apply SQL2NL to Spider and BIRD and stratify their analyses by query complexity (number of joins, nested clauses, and aggregates). The primary metrics are execution accuracyand therobustness gap, defined as the drop in execution accuracy from the original to the paraphrased questions.",
+            "metadata": {
+              "empty": false,
+              "section": "4.3 Evaluating Robustness via SQL2NL: Schema-Aligned Paraphrasing",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3277,
+              "chunk_index": 2
+            },
+            "score": 7.3685572316681025,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p23:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 23]\nUsing the compressed context, the pipeline samples multiple SQL candidates, executes them in a sandbox, and invokes an LLMbased self-refinement loop that repairs syntax, dialect, and semantic errors. Candidates are aggregated by majority vote, and low-confidence cases trigger targeted, multi-threaded column probes whose sample values are fed back to the model for disambiguation. Ablations attribute most of the gains to the compression stage, and the combined generate–execute–refine–explore workflow achieved state-of-the-art results on Spider 2.0 (approximately 35.8% execution accuracy on the Snow split and 36.6% on the Lite split, with substantial EX@k gains), at the cost of a modest number of additional LLM and database calls per example. ReFoRCE thus illustrates a practical trade-off between prompt tractability, execution grounding, and inference cost for large, heterogeneous schemas.\n\n[2026Reimagining-Text-to-SQL:p7:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 7]\nComparative note.WikiSQL tests large-scale, single-table translation with limited SQL syntax, whereas Spider and BIRD evaluate full SQL expressivity and cross-schema generalization, together covering the breadth of Text-to-SQL challenges. 3.3 Conversational and Context-Dependent Benchmarks To address real-world dialogue scenarios, two conversational benchmarks extend Spider with multi-turn interactions: • SParC[ 91]: 4,298 coherent question sequences comprising more than 12K questions over Spider schemas, testing context retention, coreference resolution, and incremental query composition. • CoSQL[ 90]: a large-scale, cross-domain conversational Text-to-SQL benchmark comprising over 3,000 user–system dialogues (30,000+ turns) and 10,000+ annotated SQL queries across 200 complex databases spanning 138 domains.\n\n[2026Reimagining-Text-to-SQL:p10:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 10]\nMethodology.SQL2NL (i) ingests a gold SQL query and its schema description; (ii) prompts a generation model with constraints that encourage lexical and syntactic diversity while forbidding schemaidentifier leakage; (iii) validates paraphrase fidelity through automatic embedding-based checks and targeted human review of a sample; and (iv) evaluates NL-to-SQL systems by comparing execution accuracy on the original questions with that on the SQL2NL paraphrases. The framework supports weighted (human-adjusted) scoring so that low-quality paraphrases do not unduly penalize systems. SQL2NL can also produce augmented training data for robustness-oriented fine-tuning. Evaluation protocol and datasets.The authors apply SQL2NL to Spider and BIRD and stratify their analyses by query complexity (number of joins, nested clauses, and aggregates). The primary metrics are execution accuracyand therobustness gap, defined as the drop in execution accuracy from the original to the paraphrased questions.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p23:paragraph:2",
+          "2026Reimagining-Text-to-SQL:p7:paragraph:3",
+          "2026Reimagining-Text-to-SQL:p10:paragraph:2"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Dr.Spider benchmark perturbation types number questions per type counts perturbation robustness",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p10:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 10,
+            "text": "Methodology.SQL2NL (i) ingests a gold SQL query and its schema description; (ii) prompts a generation model with constraints that encourage lexical and syntactic diversity while forbidding schemaidentifier leakage; (iii) validates paraphrase fidelity through automatic embedding-based checks and targeted human review of a sample; and (iv) evaluates NL-to-SQL systems by comparing execution accuracy on the original questions with that on the SQL2NL paraphrases. The framework supports weighted (human-adjusted) scoring so that low-quality paraphrases do not unduly penalize systems. SQL2NL can also produce augmented training data for robustness-oriented fine-tuning. Evaluation protocol and datasets.The authors apply SQL2NL to Spider and BIRD and stratify their analyses by query complexity (number of joins, nested clauses, and aggregates). The primary metrics are execution accuracyand therobustness gap, defined as the drop in execution accuracy from the original to the paraphrased questions.",
+            "metadata": {
+              "empty": false,
+              "section": "4.3 Evaluating Robustness via SQL2NL: Schema-Aligned Paraphrasing",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3277,
+              "chunk_index": 2
+            },
+            "score": 9.132781683605788,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p29:paragraph:1",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 29,
+            "text": "Dual-encoder or hierarchical fusion reduces online cost by precomputing schema embeddings: a schema encoder followed by cross-attention fusion has an inference cost of approximately O(T·S enc +T 2), where Senc is the length of the compressed schema representation. Graph encoders add O(E·d) cost per message-passing round (for E edges and embedding dimension d), which is linear in the number of schema relations. In deployment, common optimizations are schema pruning, cached schema encodings, PEFT adapters to reduce the memory footprint, and limited beam sizes to control decoding cost. Recommendations and trade-offs.When correctness and exact-match fidelity are paramount (for example, in audit-critical analytics), hierarchical encoders, pointer/copy attention, and constrained or AST-based decoders are preferable, accepting higher implementation complexity in exchange for robustness.",
+            "metadata": {
+              "empty": false,
+              "section": "7.1 Why a Semantic Layer Matters",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3337,
+              "chunk_index": 1
+            },
+            "score": 7.906009842957369,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p7:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 7,
+            "text": "Comparative note.WikiSQL tests large-scale, single-table translation with limited SQL syntax, whereas Spider and BIRD evaluate full SQL expressivity and cross-schema generalization, together covering the breadth of Text-to-SQL challenges. 3.3 Conversational and Context-Dependent Benchmarks To address real-world dialogue scenarios, two conversational benchmarks extend Spider with multi-turn interactions: • SParC[ 91]: 4,298 coherent question sequences comprising more than 12K questions over Spider schemas, testing context retention, coreference resolution, and incremental query composition. • CoSQL[ 90]: a large-scale, cross-domain conversational Text-to-SQL benchmark comprising over 3,000 user–system dialogues (30,000+ turns) and 10,000+ annotated SQL queries across 200 complex databases spanning 138 domains.",
+            "metadata": {
+              "empty": false,
+              "section": "3.3 Conversational and Context-Dependent Benchmarks",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3612,
+              "chunk_index": 3
+            },
+            "score": 7.448348458670554,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p10:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 10]\nMethodology.SQL2NL (i) ingests a gold SQL query and its schema description; (ii) prompts a generation model with constraints that encourage lexical and syntactic diversity while forbidding schemaidentifier leakage; (iii) validates paraphrase fidelity through automatic embedding-based checks and targeted human review of a sample; and (iv) evaluates NL-to-SQL systems by comparing execution accuracy on the original questions with that on the SQL2NL paraphrases. The framework supports weighted (human-adjusted) scoring so that low-quality paraphrases do not unduly penalize systems. SQL2NL can also produce augmented training data for robustness-oriented fine-tuning. Evaluation protocol and datasets.The authors apply SQL2NL to Spider and BIRD and stratify their analyses by query complexity (number of joins, nested clauses, and aggregates). The primary metrics are execution accuracyand therobustness gap, defined as the drop in execution accuracy from the original to the paraphrased questions.\n\n[2026Reimagining-Text-to-SQL:p29:paragraph:1 | 2026Reimagining-Text-to-SQL.pdf | page 29]\nDual-encoder or hierarchical fusion reduces online cost by precomputing schema embeddings: a schema encoder followed by cross-attention fusion has an inference cost of approximately O(T·S enc +T 2), where Senc is the length of the compressed schema representation. Graph encoders add O(E·d) cost per message-passing round (for E edges and embedding dimension d), which is linear in the number of schema relations. In deployment, common optimizations are schema pruning, cached schema encodings, PEFT adapters to reduce the memory footprint, and limited beam sizes to control decoding cost. Recommendations and trade-offs.When correctness and exact-match fidelity are paramount (for example, in audit-critical analytics), hierarchical encoders, pointer/copy attention, and constrained or AST-based decoders are preferable, accepting higher implementation complexity in exchange for robustness.\n\n[2026Reimagining-Text-to-SQL:p7:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 7]\nComparative note.WikiSQL tests large-scale, single-table translation with limited SQL syntax, whereas Spider and BIRD evaluate full SQL expressivity and cross-schema generalization, together covering the breadth of Text-to-SQL challenges. 3.3 Conversational and Context-Dependent Benchmarks To address real-world dialogue scenarios, two conversational benchmarks extend Spider with multi-turn interactions: • SParC[ 91]: 4,298 coherent question sequences comprising more than 12K questions over Spider schemas, testing context retention, coreference resolution, and incremental query composition. • CoSQL[ 90]: a large-scale, cross-domain conversational Text-to-SQL benchmark comprising over 3,000 user–system dialogues (30,000+ turns) and 10,000+ annotated SQL queries across 200 complex databases spanning 138 domains.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p10:paragraph:2",
+          "2026Reimagining-Text-to-SQL:p29:paragraph:1",
+          "2026Reimagining-Text-to-SQL:p7:paragraph:3"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Dr.Spider benchmark perturbation types number of examples questions in each perturbation category counts",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p26:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 26,
+            "text": "Tool-SQL achieves top-tier performance on Spider and Spider-Realistic in few-shot settings and excels at ensuring logical correctness beyond mere execution success. MAG-SQL.MAG-SQL [ 87] is a modular multi-agent generative framework for Text-to-SQL over large schemas. It introducessoft schema linking, in which all columns are retained in the prompt but enriched selectively, according to entity matches with the question, with table descriptions, examples, and definitions. Complex questions are decomposed by atargets–conditions decomposer, which first identifies the core query intent and then incrementally introduces filtering and constraint conditions. SubSQL statements are generated sequentially with chain-of-thought-style prompting, keeping intermediate reasoning explicit, and asub-SQL refinerexecutes each intermediate query and applies targeted corrections in response to execution errors or unexpected results.",
+            "metadata": {
+              "empty": false,
+              "section": "5.4 Agentic Methods",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4314,
+              "chunk_index": 3
+            },
+            "score": 9.394402521685643,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p13:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 13,
+            "text": "Additional structure-oriented metrics used in practice include: • Component Matching (CM).Used in the Spider benchmark, CM breaks each SQL query into its main components, including SELECT, WHERE, GROUP BY , ORDER BY , and keywords. For each component, it computes an F1 score between the predicted and ground-truth sets of sub-components while ignoring order. This enables fine-grained analysis of which parts of a query are generated correctly. • Exact Set Match (EM without values).Also used in Spider, this metric evaluates structural equivalence by treating the tables, columns, and operators within each clause as unordered sets and ignoring constant values. By focusing on structure rather than surface form, it credits semantically equivalent rewrites even when literal values differ. 13",
+            "metadata": {
+              "empty": false,
+              "section": "4.7 Test-Suite Accuracy (TSA)",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3572,
+              "chunk_index": 3
+            },
+            "score": 8.651915678554232,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p10:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 10,
+            "text": "Methodology.SQL2NL (i) ingests a gold SQL query and its schema description; (ii) prompts a generation model with constraints that encourage lexical and syntactic diversity while forbidding schemaidentifier leakage; (iii) validates paraphrase fidelity through automatic embedding-based checks and targeted human review of a sample; and (iv) evaluates NL-to-SQL systems by comparing execution accuracy on the original questions with that on the SQL2NL paraphrases. The framework supports weighted (human-adjusted) scoring so that low-quality paraphrases do not unduly penalize systems. SQL2NL can also produce augmented training data for robustness-oriented fine-tuning. Evaluation protocol and datasets.The authors apply SQL2NL to Spider and BIRD and stratify their analyses by query complexity (number of joins, nested clauses, and aggregates). The primary metrics are execution accuracyand therobustness gap, defined as the drop in execution accuracy from the original to the paraphrased questions.",
+            "metadata": {
+              "empty": false,
+              "section": "4.3 Evaluating Robustness via SQL2NL: Schema-Aligned Paraphrasing",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3277,
+              "chunk_index": 2
+            },
+            "score": 7.696387576378106,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p26:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 26]\nTool-SQL achieves top-tier performance on Spider and Spider-Realistic in few-shot settings and excels at ensuring logical correctness beyond mere execution success. MAG-SQL.MAG-SQL [ 87] is a modular multi-agent generative framework for Text-to-SQL over large schemas. It introducessoft schema linking, in which all columns are retained in the prompt but enriched selectively, according to entity matches with the question, with table descriptions, examples, and definitions. Complex questions are decomposed by atargets–conditions decomposer, which first identifies the core query intent and then incrementally introduces filtering and constraint conditions. SubSQL statements are generated sequentially with chain-of-thought-style prompting, keeping intermediate reasoning explicit, and asub-SQL refinerexecutes each intermediate query and applies targeted corrections in response to execution errors or unexpected results.\n\n[2026Reimagining-Text-to-SQL:p13:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 13]\nAdditional structure-oriented metrics used in practice include: • Component Matching (CM).Used in the Spider benchmark, CM breaks each SQL query into its main components, including SELECT, WHERE, GROUP BY , ORDER BY , and keywords. For each component, it computes an F1 score between the predicted and ground-truth sets of sub-components while ignoring order. This enables fine-grained analysis of which parts of a query are generated correctly. • Exact Set Match (EM without values).Also used in Spider, this metric evaluates structural equivalence by treating the tables, columns, and operators within each clause as unordered sets and ignoring constant values. By focusing on structure rather than surface form, it credits semantically equivalent rewrites even when literal values differ. 13\n\n[2026Reimagining-Text-to-SQL:p10:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 10]\nMethodology.SQL2NL (i) ingests a gold SQL query and its schema description; (ii) prompts a generation model with constraints that encourage lexical and syntactic diversity while forbidding schemaidentifier leakage; (iii) validates paraphrase fidelity through automatic embedding-based checks and targeted human review of a sample; and (iv) evaluates NL-to-SQL systems by comparing execution accuracy on the original questions with that on the SQL2NL paraphrases. The framework supports weighted (human-adjusted) scoring so that low-quality paraphrases do not unduly penalize systems. SQL2NL can also produce augmented training data for robustness-oriented fine-tuning. Evaluation protocol and datasets.The authors apply SQL2NL to Spider and BIRD and stratify their analyses by query complexity (number of joins, nested clauses, and aggregates). The primary metrics are execution accuracyand therobustness gap, defined as the drop in execution accuracy from the original to the paraphrased questions.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p26:paragraph:3",
+          "2026Reimagining-Text-to-SQL:p13:paragraph:3",
+          "2026Reimagining-Text-to-SQL:p10:paragraph:2"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "n_llm_calls": 4,
+    "llm_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "Dr.Spider perturbation benchmark number of questions per perturbation type"
+        },
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 28,
+          "total_tokens": 379,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.32
+      },
+      {
+        "tool": "search",
+        "args": {
+          "query": "Dr.Spider benchmark perturbation types number questions per type counts perturbation robustness"
+        },
+        "usage": {
+          "prompt_tokens": 1008,
+          "completion_tokens": 30,
+          "total_tokens": 1038,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.5
+      },
+      {
+        "tool": "search",
+        "args": {
+          "query": "Dr.Spider benchmark perturbation types number of examples questions in each perturbation category counts"
+        },
+        "usage": {
+          "prompt_tokens": 1010,
+          "completion_tokens": 32,
+          "total_tokens": 1042,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 2.014
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "There is not enough evidence in the retrieved context to determine how many questions Dr.Spider contains for each perturbation type.",
+          "citations": []
+        },
+        "usage": {
+          "prompt_tokens": 990,
+          "completion_tokens": 42,
+          "total_tokens": 1032,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.368
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3359,
+      "completion_tokens": 132,
+      "total_tokens": 3491
+    },
+    "seconds": 6.2
+  },
+  {
+    "query_id": "u04",
+    "question": "What accuracy does the survey report for systems evaluated on the EHRSQL electronic health record benchmark?",
+    "filter": null,
+    "config": "D_bm25_b3000_latest",
+    "model": "gpt-6-luna",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "EHRSQL electronic health record benchmark accuracy reported systems performance accuracy percentage",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p21:paragraph:0",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 21,
+            "text": "Figure 5:Temporal progression of the best reported execution accuracy (EX) on the BIRD test set (June 2023– September 2025). Each marker denotes a representative system at its time of publication, color-coded by paradigm: in-context learning (ICL), fine-tuning (FT), agentic/multi-agent, and reinforcement learning (RL). The grey frontier traces the running maximum, and the dashed line marks human expert performance (92.96%). Over approximately two years, the best reported accuracy roughly doubled, from 40.1% to 81.7%, yet an 11-point gap to human performance persists on the official test set. 5.3 Fine-Tuning Approaches Fine-tuning remains a cornerstone for adapting pretrained models to Text-to-SQL. Depending on whether all parameters or only a subset are updated, fine-tuning methods fall into two categories: full-parameter fine-tuning and parameter-efficient fine-tuning.",
+            "metadata": {
+              "empty": false,
+              "section": "5.3 Fine-Tuning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 2509,
+              "chunk_index": 0
+            },
+            "score": 10.791226818576245,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p19:paragraph:1",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 19,
+            "text": "ReViSQL (UIUC, March 2026).ReViSQL [100] is the first method to report human-level accuracy on BIRD, reaching 93.2% execution accuracy on an expert-verified BIRD Mini-Dev split and narrowly exceeding the 92.96% human-expert reference reported by the original benchmark. The paper’s central claim is methodological rather than architectural: it argues that the remaining gap between state-of-the-art agents and humans is driven by training-data quality rather than reasoning-pipeline design. To support this claim, the authors constructBIRD-Verified, a 2.5K-instance subset of the BIRD training set corrected through two to four rounds of independent review by SQL experts. They report annotation errors in 61.1% of the audited instances (52.1% in gold SQL queries, 26.2% in natural language questions, and 18.2% in external-knowledge fields), which is broadly consistent with concurrent findings on benchmark unreliability [39, 40].",
+            "metadata": {
+              "empty": false,
+              "section": "5.2 Reasoning-Based and Reinforcement Learning Approaches",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4730,
+              "chunk_index": 1
+            },
+            "score": 9.188664403426069,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p8:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 8,
+            "text": "• BEA VER[13] (an enterprise Text-to-SQL benchmark): a dataset built from real private enterprise data warehouses, featuring hundreds of tables and thousands of columns, with natural language questions reconstructed from real query logs. In addition to anonymized schemas, the dataset providescolumn-mapping annotations(phrase →column) to isolate schema-linking performance. Evaluation is decomposed into table retrieval, column mapping, and end-to-end SQL generation, with execution accuracy as the primary metric; off-the-shelf LLMs perform dramatically worse on BEA VER than on public benchmarks. 8",
+            "metadata": {
+              "empty": false,
+              "section": "3.4 Emerging and Specialized Benchmarks",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 2301,
+              "chunk_index": 2
+            },
+            "score": 8.180048500889894,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p21:paragraph:0 | 2026Reimagining-Text-to-SQL.pdf | page 21]\nFigure 5:Temporal progression of the best reported execution accuracy (EX) on the BIRD test set (June 2023– September 2025). Each marker denotes a representative system at its time of publication, color-coded by paradigm: in-context learning (ICL), fine-tuning (FT), agentic/multi-agent, and reinforcement learning (RL). The grey frontier traces the running maximum, and the dashed line marks human expert performance (92.96%). Over approximately two years, the best reported accuracy roughly doubled, from 40.1% to 81.7%, yet an 11-point gap to human performance persists on the official test set. 5.3 Fine-Tuning Approaches Fine-tuning remains a cornerstone for adapting pretrained models to Text-to-SQL. Depending on whether all parameters or only a subset are updated, fine-tuning methods fall into two categories: full-parameter fine-tuning and parameter-efficient fine-tuning.\n\n[2026Reimagining-Text-to-SQL:p19:paragraph:1 | 2026Reimagining-Text-to-SQL.pdf | page 19]\nReViSQL (UIUC, March 2026).ReViSQL [100] is the first method to report human-level accuracy on BIRD, reaching 93.2% execution accuracy on an expert-verified BIRD Mini-Dev split and narrowly exceeding the 92.96% human-expert reference reported by the original benchmark. The paper’s central claim is methodological rather than architectural: it argues that the remaining gap between state-of-the-art agents and humans is driven by training-data quality rather than reasoning-pipeline design. To support this claim, the authors constructBIRD-Verified, a 2.5K-instance subset of the BIRD training set corrected through two to four rounds of independent review by SQL experts. They report annotation errors in 61.1% of the audited instances (52.1% in gold SQL queries, 26.2% in natural language questions, and 18.2% in external-knowledge fields), which is broadly consistent with concurrent findings on benchmark unreliability [39, 40].\n\n[2026Reimagining-Text-to-SQL:p8:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 8]\n• BEA VER[13] (an enterprise Text-to-SQL benchmark): a dataset built from real private enterprise data warehouses, featuring hundreds of tables and thousands of columns, with natural language questions reconstructed from real query logs. In addition to anonymized schemas, the dataset providescolumn-mapping annotations(phrase →column) to isolate schema-linking performance. Evaluation is decomposed into table retrieval, column mapping, and end-to-end SQL generation, with execution accuracy as the primary metric; off-the-shelf LLMs perform dramatically worse on BEA VER than on public benchmarks. 8",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p21:paragraph:0",
+          "2026Reimagining-Text-to-SQL:p19:paragraph:1",
+          "2026Reimagining-Text-to-SQL:p8:paragraph:2"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "EHRSQL benchmark reported accuracy systems evaluation execution accuracy exact match results EHRSQL",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p39:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 39,
+            "text": "Practical deployment exposes further scalability constraints: real-world schemas are large, heterogeneous, and constantly evolving, and systems must operate within context-window limits, latency targets, and monetary budgets that make many current methods difficult for organizations to adopt. Addressing these issues will require advances in grounding, verification, and cost-aware inference. Evaluation practices must therefore remain multifaceted. Exact match is useful for assessing syntactic fidelity, while execution accuracy better reflects end-user correctness; robustness tests (paraphrase and synonym sets) and efficiency-aware metrics are needed to capture real-world utility, and expert-verified benchmarks are needed to ensure that reported gains are real. We advocate evaluation suites that report a balanced set of metrics (correctness, robustness, and cost/efficiency), together with difficulty-stratified analyses that make progress on hard, long-tail cases visible.",
+            "metadata": {
+              "empty": false,
+              "section": "10 Conclusion",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4469,
+              "chunk_index": 3
+            },
+            "score": 14.788363222090826,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p9:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 9,
+            "text": "4.1 Exact Match Accuracy (EM) Exact match accuracychecks whether the predicted SQL query exactly matches the reference SQL query: EM= 1N N∑i=1 I( ˆQi =Q i),(2) where N is the number of evaluation examples, ˆQi is the SQL query generated by the model, Qi is the ground-truth SQL query, and I(·) is the indicator function, which equals 1 if its argument is true and 0 otherwise. This metric is easy to compute and interpret but is rigid: semantically equivalent queries (e.g., queries that differ only in predicate order) receive a score of 0 even though they return the same result. For example, the following two queries are semantically equivalent but fail exact match: 9",
+            "metadata": {
+              "empty": false,
+              "section": "4.1 Exact Match Accuracy (EM)",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3526,
+              "chunk_index": 3
+            },
+            "score": 13.018192139287484,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p14:paragraph:0",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 14,
+            "text": "Figure 3:Property coverage matrix for Text-to-SQL evaluation metrics. Each cell indicates whether a metric fully supports (∗), partially supports (o), or does not support (–) a given evaluation property. Execution Accuracy (EX) and Valid Efficiency Score (VES) require database access but capture semantic correctness, whereas structure-aware metrics such as SQAM and TSED provide partial credit and syntactic fidelity without requiring query execution, making them suitable for privacy-restricted or compliance-sensitive deployment settings. No single metric covers all properties, reinforcing the need for multi-metric evaluation protocols. 4.8 Challenges in Evaluation Although these metrics have helped standardize evaluation, each has limitations: • Exact match (EM)does not account for the syntactic flexibility of SQL and therefore penalizes queries that are logically correct but written in an alternative form.",
+            "metadata": {
+              "empty": false,
+              "section": "4.8 Challenges in Evaluation",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 2301,
+              "chunk_index": 0
+            },
+            "score": 11.908170997880635,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p39:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 39]\nPractical deployment exposes further scalability constraints: real-world schemas are large, heterogeneous, and constantly evolving, and systems must operate within context-window limits, latency targets, and monetary budgets that make many current methods difficult for organizations to adopt. Addressing these issues will require advances in grounding, verification, and cost-aware inference. Evaluation practices must therefore remain multifaceted. Exact match is useful for assessing syntactic fidelity, while execution accuracy better reflects end-user correctness; robustness tests (paraphrase and synonym sets) and efficiency-aware metrics are needed to capture real-world utility, and expert-verified benchmarks are needed to ensure that reported gains are real. We advocate evaluation suites that report a balanced set of metrics (correctness, robustness, and cost/efficiency), together with difficulty-stratified analyses that make progress on hard, long-tail cases visible.\n\n[2026Reimagining-Text-to-SQL:p9:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 9]\n4.1 Exact Match Accuracy (EM) Exact match accuracychecks whether the predicted SQL query exactly matches the reference SQL query: EM= 1N N∑i=1 I( ˆQi =Q i),(2) where N is the number of evaluation examples, ˆQi is the SQL query generated by the model, Qi is the ground-truth SQL query, and I(·) is the indicator function, which equals 1 if its argument is true and 0 otherwise. This metric is easy to compute and interpret but is rigid: semantically equivalent queries (e.g., queries that differ only in predicate order) receive a score of 0 even though they return the same result. For example, the following two queries are semantically equivalent but fail exact match: 9\n\n[2026Reimagining-Text-to-SQL:p14:paragraph:0 | 2026Reimagining-Text-to-SQL.pdf | page 14]\nFigure 3:Property coverage matrix for Text-to-SQL evaluation metrics. Each cell indicates whether a metric fully supports (∗), partially supports (o), or does not support (–) a given evaluation property. Execution Accuracy (EX) and Valid Efficiency Score (VES) require database access but capture semantic correctness, whereas structure-aware metrics such as SQAM and TSED provide partial credit and syntactic fidelity without requiring query execution, making them suitable for privacy-restricted or compliance-sensitive deployment settings. No single metric covers all properties, reinforcing the need for multi-metric evaluation protocols. 4.8 Challenges in Evaluation Although these metrics have helped standardize evaluation, each has limitations: • Exact match (EM)does not account for the syntactic flexibility of SQL and therefore penalizes queries that are logically correct but written in an alternative form.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p39:paragraph:3",
+          "2026Reimagining-Text-to-SQL:p9:paragraph:3",
+          "2026Reimagining-Text-to-SQL:p14:paragraph:0"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "EHRSQL benchmark accuracy reported results exact match execution accuracy electronic health records systems score percentage",
+        "filter": null,
+        "results": [
+          {
+            "id": "2026Reimagining-Text-to-SQL:p9:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 9,
+            "text": "4.1 Exact Match Accuracy (EM) Exact match accuracychecks whether the predicted SQL query exactly matches the reference SQL query: EM= 1N N∑i=1 I( ˆQi =Q i),(2) where N is the number of evaluation examples, ˆQi is the SQL query generated by the model, Qi is the ground-truth SQL query, and I(·) is the indicator function, which equals 1 if its argument is true and 0 otherwise. This metric is easy to compute and interpret but is rigid: semantically equivalent queries (e.g., queries that differ only in predicate order) receive a score of 0 even though they return the same result. For example, the following two queries are semantically equivalent but fail exact match: 9",
+            "metadata": {
+              "empty": false,
+              "section": "4.1 Exact Match Accuracy (EM)",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 3526,
+              "chunk_index": 3
+            },
+            "score": 14.125294307511872,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p39:paragraph:3",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 39,
+            "text": "Practical deployment exposes further scalability constraints: real-world schemas are large, heterogeneous, and constantly evolving, and systems must operate within context-window limits, latency targets, and monetary budgets that make many current methods difficult for organizations to adopt. Addressing these issues will require advances in grounding, verification, and cost-aware inference. Evaluation practices must therefore remain multifaceted. Exact match is useful for assessing syntactic fidelity, while execution accuracy better reflects end-user correctness; robustness tests (paraphrase and synonym sets) and efficiency-aware metrics are needed to capture real-world utility, and expert-verified benchmarks are needed to ensure that reported gains are real. We advocate evaluation suites that report a balanced set of metrics (correctness, robustness, and cost/efficiency), together with difficulty-stratified analyses that make progress on hard, long-tail cases visible.",
+            "metadata": {
+              "empty": false,
+              "section": "10 Conclusion",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4469,
+              "chunk_index": 3
+            },
+            "score": 12.463800619524044,
+            "strategy": "bm25"
+          },
+          {
+            "id": "2026Reimagining-Text-to-SQL:p27:paragraph:2",
+            "source_id": "2026Reimagining-Text-to-SQL",
+            "source": "2026Reimagining-Text-to-SQL.pdf",
+            "page": 27,
+            "text": "To assess TAG, the authors introduceTAG-Bench, derived from a modified BIRD corpus and comprising 80 challenging queries that span match-based retrieval, comparisons, aggregations, and ranking; roughly half require external world knowledge, and the rest demand reasoning beyond schema-level inference. Baselines such as conventional Text-to-SQL, retrieval-augmented generation, and LM re-ranking all perform poorly on TAG-Bench, with exact-match accuracies of at most 20%, whereas hand-written TAG pipelines implemented on the LOTUS runtime achieve absolute gains of roughly 20–65 percentage points. These results indicate that table-augmented generation substantially improves robustness on complex analytical queries, and the open-source release supports reproducibility. ASTReS.ASTReS [71] (AST-based REranking and Schema pruning) is a retrieval-augmented framework designed to overcome the shortcomings of standard few-shot ICL in the presence of large and complex schemas.",
+            "metadata": {
+              "empty": false,
+              "section": "6 Architectural Design Patterns for Text-to-SQL",
+              "strategy": "paragraph",
+              "needs_ocr": false,
+              "char_count": 4134,
+              "chunk_index": 2
+            },
+            "score": 12.354399665011629,
+            "strategy": "bm25"
+          }
+        ],
+        "context": "[2026Reimagining-Text-to-SQL:p9:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 9]\n4.1 Exact Match Accuracy (EM) Exact match accuracychecks whether the predicted SQL query exactly matches the reference SQL query: EM= 1N N∑i=1 I( ˆQi =Q i),(2) where N is the number of evaluation examples, ˆQi is the SQL query generated by the model, Qi is the ground-truth SQL query, and I(·) is the indicator function, which equals 1 if its argument is true and 0 otherwise. This metric is easy to compute and interpret but is rigid: semantically equivalent queries (e.g., queries that differ only in predicate order) receive a score of 0 even though they return the same result. For example, the following two queries are semantically equivalent but fail exact match: 9\n\n[2026Reimagining-Text-to-SQL:p39:paragraph:3 | 2026Reimagining-Text-to-SQL.pdf | page 39]\nPractical deployment exposes further scalability constraints: real-world schemas are large, heterogeneous, and constantly evolving, and systems must operate within context-window limits, latency targets, and monetary budgets that make many current methods difficult for organizations to adopt. Addressing these issues will require advances in grounding, verification, and cost-aware inference. Evaluation practices must therefore remain multifaceted. Exact match is useful for assessing syntactic fidelity, while execution accuracy better reflects end-user correctness; robustness tests (paraphrase and synonym sets) and efficiency-aware metrics are needed to capture real-world utility, and expert-verified benchmarks are needed to ensure that reported gains are real. We advocate evaluation suites that report a balanced set of metrics (correctness, robustness, and cost/efficiency), together with difficulty-stratified analyses that make progress on hard, long-tail cases visible.\n\n[2026Reimagining-Text-to-SQL:p27:paragraph:2 | 2026Reimagining-Text-to-SQL.pdf | page 27]\nTo assess TAG, the authors introduceTAG-Bench, derived from a modified BIRD corpus and comprising 80 challenging queries that span match-based retrieval, comparisons, aggregations, and ranking; roughly half require external world knowledge, and the rest demand reasoning beyond schema-level inference. Baselines such as conventional Text-to-SQL, retrieval-augmented generation, and LM re-ranking all perform poorly on TAG-Bench, with exact-match accuracies of at most 20%, whereas hand-written TAG pipelines implemented on the LOTUS runtime achieve absolute gains of roughly 20–65 percentage points. These results indicate that table-augmented generation substantially improves robustness on complex analytical queries, and the open-source release supports reproducibility. ASTReS.ASTReS [71] (AST-based REranking and Schema pruning) is a retrieval-augmented framework designed to overcome the shortcomings of standard few-shot ICL in the presence of large and complex schemas.",
+        "context_ids": [
+          "2026Reimagining-Text-to-SQL:p9:paragraph:3",
+          "2026Reimagining-Text-to-SQL:p39:paragraph:3",
+          "2026Reimagining-Text-to-SQL:p27:paragraph:2"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "n_llm_calls": 4,
+    "llm_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "EHRSQL electronic health record benchmark accuracy reported systems performance accuracy percentage"
+        },
+        "usage": {
+          "prompt_tokens": 352,
+          "completion_tokens": 28,
+          "total_tokens": 380,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.43
+      },
+      {
+        "tool": "search",
+        "args": {
+          "query": "EHRSQL benchmark reported accuracy systems evaluation execution accuracy exact match results EHRSQL"
+        },
+        "usage": {
+          "prompt_tokens": 987,
+          "completion_tokens": 31,
+          "total_tokens": 1018,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.561
+      },
+      {
+        "tool": "search",
+        "args": {
+          "query": "EHRSQL benchmark accuracy reported results exact match execution accuracy electronic health records systems score percentage"
+        },
+        "usage": {
+          "prompt_tokens": 980,
+          "completion_tokens": 32,
+          "total_tokens": 1012,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.454
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "There is not enough evidence in the retrieved context to determine the accuracy reported for systems evaluated on the EHRSQL benchmark.",
+          "citations": []
+        },
+        "usage": {
+          "prompt_tokens": 996,
+          "completion_tokens": 42,
+          "total_tokens": 1038,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "seconds": 1.357
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3315,
+      "completion_tokens": 133,
+      "total_tokens": 3448
+    },
+    "seconds": 5.81
+  }
+]

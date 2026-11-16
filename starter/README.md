@@ -61,3 +61,15 @@ Thay đường dẫn trong `< >`. Script tổng hợp nhãn bạn đã chấm, k
 TF-IDF dùng cách tách từ đơn giản. `baseline.py` dùng mặc định context budget 800 ký tự, gồm cả nguồn; chunk không vừa bị bỏ. Bạn có thể chọn cách khác. File kết quả cùng tên sẽ bị ghi đè. `starter/data/` và `starter/results/` không được Git theo dõi mặc định; nếu được phép chia sẻ, dùng `git add -f <đường-dẫn>`, hoặc ghi cách tái tạo. Không nộp dữ liệu mật và secret.
 
 Khung agent ưu tiên giữ chunk từ lần search trước. Khi chunk đầu chiếm gần hết budget, lần search sau có thể không thêm được evidence; hãy kiểm tra trace và thử cách chọn context phù hợp trên dev. Citation ID hợp lệ hoặc verifier trả “đúng” không đảm bảo câu trả lời được hỗ trợ; cần chấm thủ công.
+
+## Day 7 run guide (this submission)
+
+Needs: Docker Postgres from Day 6 running, Day 6 venv, `starter/.env` (copy `.env.example`, fill `OPENAI_API_KEY`, `LLM_MODEL`).
+Full commands, results and analysis: `report/PROGRESS.md` §5 and `report/individual/2A202604021_TuHuyBao.md`.
+
+| File | Purpose |
+|---|---|
+| `build_benchmark.py` | builds `data/benchmark.json` (copy in `report/evidence/benchmark.json`) |
+| `dense.py` | dense retrieval on the Day 6 pgvector index |
+| `compare.py` | dense vs BM25 vs hybrid (RRF) on one split |
+| `run_agent.py`, `llm.py` | real-LLM agent; `--split test` needs `--i-locked-config` |

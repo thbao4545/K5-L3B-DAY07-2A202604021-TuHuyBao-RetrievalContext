@@ -1,0 +1,56 @@
+[
+  {
+    "query_id": "t01",
+    "answer_grade": 0,
+    "citation_support": [],
+    "context_grade": 0,
+    "notes": "AI-assisted prelim: refused although answerable (final context empty/without gold evidence at 800 chars) -> 0 by rule."
+  },
+  {
+    "query_id": "t02",
+    "answer_grade": 0,
+    "citation_support": [],
+    "context_grade": 0,
+    "notes": "AI-assisted prelim: refused although answerable (final context empty/without gold evidence at 800 chars) -> 0 by rule."
+  },
+  {
+    "query_id": "t03",
+    "answer_grade": 0,
+    "citation_support": [],
+    "context_grade": 0,
+    "notes": "AI-assisted prelim: refused although answerable (final context empty/without gold evidence at 800 chars) -> 0 by rule."
+  },
+  {
+    "query_id": "t04",
+    "answer_grade": 0,
+    "citation_support": [],
+    "context_grade": 0,
+    "notes": "AI-assisted prelim: refused although answerable (final context empty/without gold evidence at 800 chars) -> 0 by rule."
+  },
+  {
+    "query_id": "t05",
+    "answer_grade": 0,
+    "citation_support": [],
+    "context_grade": 0,
+    "notes": "AI-assisted prelim: refused although answerable (final context empty/without gold evidence at 800 chars) -> 0 by rule."
+  },
+  {
+    "query_id": "t06",
+    "answer_grade": 0,
+    "citation_support": [],
+    "context_grade": 0,
+    "notes": "AI-assisted prelim: refused although answerable (final context empty/without gold evidence at 800 chars) -> 0 by rule."
+  },
+  {
+    "query_id": "u03",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "AI-assisted prelim: refused with \"not enough evidence\", no extra factual claim; absence verified by corpus scan (build_benchmark.py)."
+  },
+  {
+    "query_id": "u04",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "AI-assisted prelim: refused with \"not enough evidence\", no extra factual claim; absence verified by corpus scan (build_benchmark.py)."
+  }
+]

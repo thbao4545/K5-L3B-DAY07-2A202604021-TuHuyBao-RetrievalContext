@@ -30,13 +30,16 @@ class Retriever(Protocol):
 
 def run_agent(question: str, controller: Controller, retriever: Retriever, *,
               filters: dict[str, Any] | None = None, max_searches: int = 4,
-              top_k: int = 3, budget: int = 800) -> dict[str, Any]:
+              top_k: int = 3, budget: int = 800,
+              context_policy: str = 'keep_first') -> dict[str, Any]:
     """Return answer, citation IDs and trace; no benchmark gold enters this loop.
 
     A final answer without valid citations, an empty context, and a search limit
     lead to abstention. This only checks citation IDs, not semantic grounding.
     Provider/retriever errors propagate; no silent mock fallback.
     """
+    if context_policy not in ('keep_first', 'latest_first'):
+        raise ValueError('context_policy phải là keep_first hoặc latest_first')
     if not question.strip() or max_searches < 1 or top_k < 1 or budget < 1:
         raise ValueError('question, max_searches, top_k hoặc budget không hợp lệ')
     history: list[dict[str, Any]] = []
@@ -54,7 +57,8 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
             results = retriever.search(query, filters=filters, top_k=top_k)
             if len(results) > top_k or len({r['id'] for r in results}) != len(results):
                 raise ValueError('retriever phải trả tối đa top_k chunk ID duy nhất')
-            candidates.extend(results)
+            # keep_first (starter default): earlier chunks are packed first; latest_first: newest results first.
+            candidates = candidates + results if context_policy == 'keep_first' else results + candidates
             context, ids = pack_context(candidates, budget=budget)
             chunks = {c['id']: c for c in candidates if c['id'] in ids}
             events.append({'event': 'search', 'query': query, 'filter': filters, 'results': results,
