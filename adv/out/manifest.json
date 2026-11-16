@@ -1,0 +1,104 @@
+{
+ "pages_total": 154,
+ "pages_with_text_chunks": 154,
+ "visual_pass_pages_sent_to_model": 99,
+ "visual_pass_pages_with_no_items": [
+  {
+   "page": 1,
+   "images": 1,
+   "drawings": 3,
+   "text_chars": 3500
+  },
+  {
+   "page": 114,
+   "images": 0,
+   "drawings": 122,
+   "text_chars": 1660
+  },
+  {
+   "page": 116,
+   "images": 0,
+   "drawings": 106,
+   "text_chars": 2512
+  },
+  {
+   "page": 119,
+   "images": 0,
+   "drawings": 124,
+   "text_chars": 1276
+  },
+  {
+   "page": 120,
+   "images": 0,
+   "drawings": 128,
+   "text_chars": 1152
+  },
+  {
+   "page": 121,
+   "images": 0,
+   "drawings": 124,
+   "text_chars": 1502
+  },
+  {
+   "page": 122,
+   "images": 0,
+   "drawings": 129,
+   "text_chars": 1031
+  },
+  {
+   "page": 131,
+   "images": 0,
+   "drawings": 56,
+   "text_chars": 2973
+  },
+  {
+   "page": 133,
+   "images": 0,
+   "drawings": 120,
+   "text_chars": 3488
+  },
+  {
+   "page": 136,
+   "images": 0,
+   "drawings": 61,
+   "text_chars": 2883
+  },
+  {
+   "page": 137,
+   "images": 0,
+   "drawings": 67,
+   "text_chars": 2441
+  },
+  {
+   "page": 138,
+   "images": 0,
+   "drawings": 120,
+   "text_chars": 3171
+  },
+  {
+   "page": 140,
+   "images": 0,
+   "drawings": 130,
+   "text_chars": 1852
+  },
+  {
+   "page": 142,
+   "images": 0,
+   "drawings": 48,
+   "text_chars": 1830
+  },
+  {
+   "page": 143,
+   "images": 0,
+   "drawings": 101,
+   "text_chars": 1695
+  },
+  {
+   "page": 145,
+   "images": 0,
+   "drawings": 83,
+   "text_chars": 2627
+  }
+ ],
+ "note": "16 trang đã gửi qua vision pass nhưng không có bảng/biểu đồ/hình: trang 1 (tiêu đề + abstract) và 15 trang phụ lục 114-145 chỉ chứa text trong khung kẻ (đoạn mã, prompt mẫu, PDDL, ví dụ few-shot; số nét vẽ lớn là viền khung). Nội dung của chúng nằm trong text layer và đã được index (154/154 trang có chunk). Không có trang nào bị bỏ qua do lỗi (0 lỗi API). 55 trang không được gửi qua vision pass vì không có chú thích Table/Figure, dưới 20 nét vẽ và không có ảnh nhúng (tiêu chí trong adv/extract.py); chúng chỉ được index bằng text layer. Rủi ro còn lại: một bảng/biểu đồ rất nhỏ không có chú thích sẽ bị bỏ qua."
+}

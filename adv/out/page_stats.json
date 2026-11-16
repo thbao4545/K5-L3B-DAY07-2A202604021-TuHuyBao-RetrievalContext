@@ -1,0 +1,1241 @@
+[
+ {
+  "page": 1,
+  "chars": 3500,
+  "images": 1,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 2,
+  "chars": 2326,
+  "images": 1,
+  "drawings": 2,
+  "captions": [
+   "Figure 1"
+  ]
+ },
+ {
+  "page": 3,
+  "chars": 2887,
+  "images": 0,
+  "drawings": 12,
+  "captions": [
+   "Table 1",
+   "Table 2"
+  ]
+ },
+ {
+  "page": 4,
+  "chars": 4354,
+  "images": 0,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 5,
+  "chars": 2767,
+  "images": 0,
+  "drawings": 50,
+  "captions": [
+   "Figure 2"
+  ]
+ },
+ {
+  "page": 6,
+  "chars": 3429,
+  "images": 0,
+  "drawings": 5,
+  "captions": [
+   "Table 3"
+  ]
+ },
+ {
+  "page": 7,
+  "chars": 3710,
+  "images": 0,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 8,
+  "chars": 1462,
+  "images": 11,
+  "drawings": 42,
+  "captions": [
+   "Figure 3",
+   "Figure 4",
+   "Figure 5"
+  ]
+ },
+ {
+  "page": 9,
+  "chars": 2034,
+  "images": 1,
+  "drawings": 2,
+  "captions": [
+   "Figure 6"
+  ]
+ },
+ {
+  "page": 10,
+  "chars": 3383,
+  "images": 0,
+  "drawings": 218,
+  "captions": [
+   "Figure 7"
+  ]
+ },
+ {
+  "page": 11,
+  "chars": 4128,
+  "images": 0,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 12,
+  "chars": 2775,
+  "images": 0,
+  "drawings": 5075,
+  "captions": [
+   "Figure 8"
+  ]
+ },
+ {
+  "page": 13,
+  "chars": 2941,
+  "images": 0,
+  "drawings": 2258,
+  "captions": [
+   "Figure 9"
+  ]
+ },
+ {
+  "page": 14,
+  "chars": 3005,
+  "images": 0,
+  "drawings": 2489,
+  "captions": [
+   "Figure 10"
+  ]
+ },
+ {
+  "page": 15,
+  "chars": 3241,
+  "images": 0,
+  "drawings": 564,
+  "captions": [
+   "Figure 11"
+  ]
+ },
+ {
+  "page": 16,
+  "chars": 2939,
+  "images": 0,
+  "drawings": 180,
+  "captions": [
+   "Figure 12"
+  ]
+ },
+ {
+  "page": 17,
+  "chars": 4559,
+  "images": 0,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 18,
+  "chars": 3232,
+  "images": 0,
+  "drawings": 13,
+  "captions": [
+   "Table 4",
+   "Table 5"
+  ]
+ },
+ {
+  "page": 19,
+  "chars": 3613,
+  "images": 0,
+  "drawings": 6,
+  "captions": [
+   "Table 6"
+  ]
+ },
+ {
+  "page": 20,
+  "chars": 2779,
+  "images": 0,
+  "drawings": 718,
+  "captions": [
+   "Table 7",
+   "Figure 13"
+  ]
+ },
+ {
+  "page": 21,
+  "chars": 4274,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 22,
+  "chars": 2682,
+  "images": 0,
+  "drawings": 53,
+  "captions": [
+   "Figure 14"
+  ]
+ },
+ {
+  "page": 23,
+  "chars": 3240,
+  "images": 0,
+  "drawings": 9,
+  "captions": [
+   "Table 8"
+  ]
+ },
+ {
+  "page": 24,
+  "chars": 2497,
+  "images": 0,
+  "drawings": 28,
+  "captions": [
+   "Figure 15"
+  ]
+ },
+ {
+  "page": 25,
+  "chars": 3586,
+  "images": 0,
+  "drawings": 6,
+  "captions": [
+   "Table 9"
+  ]
+ },
+ {
+  "page": 26,
+  "chars": 3291,
+  "images": 0,
+  "drawings": 1008,
+  "captions": [
+   "Figure 16"
+  ]
+ },
+ {
+  "page": 27,
+  "chars": 3853,
+  "images": 0,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 28,
+  "chars": 3698,
+  "images": 2,
+  "drawings": 619,
+  "captions": [
+   "Figure 17"
+  ]
+ },
+ {
+  "page": 29,
+  "chars": 2991,
+  "images": 0,
+  "drawings": 9,
+  "captions": [
+   "Table 10"
+  ]
+ },
+ {
+  "page": 30,
+  "chars": 2875,
+  "images": 0,
+  "drawings": 20,
+  "captions": [
+   "Table 11"
+  ]
+ },
+ {
+  "page": 31,
+  "chars": 4183,
+  "images": 0,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 32,
+  "chars": 3604,
+  "images": 0,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 33,
+  "chars": 3421,
+  "images": 0,
+  "drawings": 7,
+  "captions": [
+   "Table 12"
+  ]
+ },
+ {
+  "page": 34,
+  "chars": 3408,
+  "images": 0,
+  "drawings": 9,
+  "captions": [
+   "Table 13"
+  ]
+ },
+ {
+  "page": 35,
+  "chars": 2600,
+  "images": 0,
+  "drawings": 41,
+  "captions": [
+   "Figure 18"
+  ]
+ },
+ {
+  "page": 36,
+  "chars": 2944,
+  "images": 0,
+  "drawings": 11,
+  "captions": [
+   "Table 14",
+   "Table 15",
+   "Table 16"
+  ]
+ },
+ {
+  "page": 37,
+  "chars": 3966,
+  "images": 0,
+  "drawings": 5,
+  "captions": [
+   "Table 17"
+  ]
+ },
+ {
+  "page": 38,
+  "chars": 2553,
+  "images": 0,
+  "drawings": 88,
+  "captions": [
+   "Figure 19"
+  ]
+ },
+ {
+  "page": 39,
+  "chars": 2183,
+  "images": 0,
+  "drawings": 20,
+  "captions": [
+   "Table 18"
+  ]
+ },
+ {
+  "page": 40,
+  "chars": 2682,
+  "images": 0,
+  "drawings": 11,
+  "captions": [
+   "Table 19"
+  ]
+ },
+ {
+  "page": 41,
+  "chars": 3950,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 42,
+  "chars": 2618,
+  "images": 0,
+  "drawings": 11,
+  "captions": [
+   "Table 20"
+  ]
+ },
+ {
+  "page": 43,
+  "chars": 2841,
+  "images": 0,
+  "drawings": 11,
+  "captions": [
+   "Table 21"
+  ]
+ },
+ {
+  "page": 44,
+  "chars": 2344,
+  "images": 0,
+  "drawings": 14,
+  "captions": []
+ },
+ {
+  "page": 45,
+  "chars": 3285,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 46,
+  "chars": 1770,
+  "images": 0,
+  "drawings": 16,
+  "captions": [
+   "Table 22"
+  ]
+ },
+ {
+  "page": 47,
+  "chars": 899,
+  "images": 0,
+  "drawings": 174,
+  "captions": [
+   "Figure 20"
+  ]
+ },
+ {
+  "page": 48,
+  "chars": 3145,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 49,
+  "chars": 3602,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 50,
+  "chars": 3376,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 51,
+  "chars": 3200,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 52,
+  "chars": 3346,
+  "images": 0,
+  "drawings": 13,
+  "captions": [
+   "Table 23"
+  ]
+ },
+ {
+  "page": 53,
+  "chars": 4165,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 54,
+  "chars": 3363,
+  "images": 0,
+  "drawings": 12,
+  "captions": [
+   "Table 24",
+   "Table 25"
+  ]
+ },
+ {
+  "page": 55,
+  "chars": 3679,
+  "images": 0,
+  "drawings": 7,
+  "captions": [
+   "Table 26"
+  ]
+ },
+ {
+  "page": 56,
+  "chars": 2843,
+  "images": 0,
+  "drawings": 75,
+  "captions": [
+   "Figure 21"
+  ]
+ },
+ {
+  "page": 57,
+  "chars": 5330,
+  "images": 0,
+  "drawings": 15,
+  "captions": [
+   "Table 27"
+  ]
+ },
+ {
+  "page": 58,
+  "chars": 3137,
+  "images": 0,
+  "drawings": 12,
+  "captions": [
+   "Table 28",
+   "Table 29"
+  ]
+ },
+ {
+  "page": 59,
+  "chars": 2359,
+  "images": 1,
+  "drawings": 4,
+  "captions": [
+   "Table 30",
+   "Figure 22"
+  ]
+ },
+ {
+  "page": 60,
+  "chars": 3875,
+  "images": 0,
+  "drawings": 19,
+  "captions": [
+   "Table 31"
+  ]
+ },
+ {
+  "page": 61,
+  "chars": 4566,
+  "images": 1,
+  "drawings": 31,
+  "captions": [
+   "Figure 23"
+  ]
+ },
+ {
+  "page": 62,
+  "chars": 3703,
+  "images": 0,
+  "drawings": 6,
+  "captions": [
+   "Table 32"
+  ]
+ },
+ {
+  "page": 63,
+  "chars": 2856,
+  "images": 0,
+  "drawings": 68,
+  "captions": [
+   "Figure 24"
+  ]
+ },
+ {
+  "page": 64,
+  "chars": 2381,
+  "images": 0,
+  "drawings": 53,
+  "captions": [
+   "Figure 25"
+  ]
+ },
+ {
+  "page": 65,
+  "chars": 3865,
+  "images": 0,
+  "drawings": 256,
+  "captions": [
+   "Figure 26"
+  ]
+ },
+ {
+  "page": 66,
+  "chars": 3643,
+  "images": 0,
+  "drawings": 16,
+  "captions": [
+   "Table 33"
+  ]
+ },
+ {
+  "page": 67,
+  "chars": 3246,
+  "images": 0,
+  "drawings": 26,
+  "captions": [
+   "Table 34",
+   "Table 35"
+  ]
+ },
+ {
+  "page": 68,
+  "chars": 2609,
+  "images": 0,
+  "drawings": 15,
+  "captions": [
+   "Table 36",
+   "Table 37"
+  ]
+ },
+ {
+  "page": 69,
+  "chars": 3686,
+  "images": 0,
+  "drawings": 16,
+  "captions": [
+   "Table 38",
+   "Table 39"
+  ]
+ },
+ {
+  "page": 70,
+  "chars": 2989,
+  "images": 0,
+  "drawings": 21,
+  "captions": [
+   "Table 40",
+   "Table 41",
+   "Table 42"
+  ]
+ },
+ {
+  "page": 71,
+  "chars": 3085,
+  "images": 0,
+  "drawings": 16,
+  "captions": [
+   "Table 43",
+   "Table 44"
+  ]
+ },
+ {
+  "page": 72,
+  "chars": 3686,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 73,
+  "chars": 3364,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 74,
+  "chars": 4388,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 75,
+  "chars": 3287,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 76,
+  "chars": 3559,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 77,
+  "chars": 3603,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 78,
+  "chars": 3563,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 79,
+  "chars": 3261,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 80,
+  "chars": 3356,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 81,
+  "chars": 3471,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 82,
+  "chars": 3431,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 83,
+  "chars": 3420,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 84,
+  "chars": 3305,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 85,
+  "chars": 3870,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 86,
+  "chars": 3303,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 87,
+  "chars": 3661,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 88,
+  "chars": 3486,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 89,
+  "chars": 2990,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 90,
+  "chars": 3533,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 91,
+  "chars": 485,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 92,
+  "chars": 1449,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 93,
+  "chars": 1426,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 94,
+  "chars": 1449,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 95,
+  "chars": 1403,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 96,
+  "chars": 1491,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 97,
+  "chars": 1430,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 98,
+  "chars": 1482,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 99,
+  "chars": 1437,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 100,
+  "chars": 1405,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 101,
+  "chars": 1490,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 102,
+  "chars": 1460,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 103,
+  "chars": 1301,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 104,
+  "chars": 4057,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 105,
+  "chars": 2078,
+  "images": 0,
+  "drawings": 11,
+  "captions": []
+ },
+ {
+  "page": 106,
+  "chars": 2124,
+  "images": 0,
+  "drawings": 17,
+  "captions": []
+ },
+ {
+  "page": 107,
+  "chars": 1094,
+  "images": 0,
+  "drawings": 4,
+  "captions": [
+   "Table 45"
+  ]
+ },
+ {
+  "page": 108,
+  "chars": 1426,
+  "images": 0,
+  "drawings": 732,
+  "captions": [
+   "Figure 27",
+   "Table 46"
+  ]
+ },
+ {
+  "page": 109,
+  "chars": 2686,
+  "images": 0,
+  "drawings": 7,
+  "captions": [
+   "Table 46"
+  ]
+ },
+ {
+  "page": 110,
+  "chars": 1892,
+  "images": 1,
+  "drawings": 2,
+  "captions": [
+   "Figure 28"
+  ]
+ },
+ {
+  "page": 111,
+  "chars": 1546,
+  "images": 0,
+  "drawings": 8,
+  "captions": [
+   "Table 47"
+  ]
+ },
+ {
+  "page": 112,
+  "chars": 1760,
+  "images": 0,
+  "drawings": 126,
+  "captions": [
+   "Table 48"
+  ]
+ },
+ {
+  "page": 113,
+  "chars": 1490,
+  "images": 0,
+  "drawings": 126,
+  "captions": []
+ },
+ {
+  "page": 114,
+  "chars": 1660,
+  "images": 0,
+  "drawings": 122,
+  "captions": []
+ },
+ {
+  "page": 115,
+  "chars": 2078,
+  "images": 0,
+  "drawings": 124,
+  "captions": []
+ },
+ {
+  "page": 116,
+  "chars": 2512,
+  "images": 0,
+  "drawings": 106,
+  "captions": []
+ },
+ {
+  "page": 117,
+  "chars": 1376,
+  "images": 0,
+  "drawings": 202,
+  "captions": [
+   "Figure 29"
+  ]
+ },
+ {
+  "page": 118,
+  "chars": 1223,
+  "images": 0,
+  "drawings": 128,
+  "captions": []
+ },
+ {
+  "page": 119,
+  "chars": 1276,
+  "images": 0,
+  "drawings": 124,
+  "captions": []
+ },
+ {
+  "page": 120,
+  "chars": 1152,
+  "images": 0,
+  "drawings": 128,
+  "captions": []
+ },
+ {
+  "page": 121,
+  "chars": 1502,
+  "images": 0,
+  "drawings": 124,
+  "captions": []
+ },
+ {
+  "page": 122,
+  "chars": 1031,
+  "images": 0,
+  "drawings": 129,
+  "captions": []
+ },
+ {
+  "page": 123,
+  "chars": 2936,
+  "images": 0,
+  "drawings": 129,
+  "captions": []
+ },
+ {
+  "page": 124,
+  "chars": 1246,
+  "images": 0,
+  "drawings": 59,
+  "captions": []
+ },
+ {
+  "page": 125,
+  "chars": 3145,
+  "images": 0,
+  "drawings": 4,
+  "captions": [
+   "Table 49"
+  ]
+ },
+ {
+  "page": 126,
+  "chars": 1388,
+  "images": 0,
+  "drawings": 4,
+  "captions": [
+   "Table 50"
+  ]
+ },
+ {
+  "page": 127,
+  "chars": 2164,
+  "images": 0,
+  "drawings": 4,
+  "captions": [
+   "Table 51"
+  ]
+ },
+ {
+  "page": 128,
+  "chars": 3096,
+  "images": 0,
+  "drawings": 5,
+  "captions": [
+   "Table 52"
+  ]
+ },
+ {
+  "page": 129,
+  "chars": 2671,
+  "images": 0,
+  "drawings": 5,
+  "captions": [
+   "Table 53"
+  ]
+ },
+ {
+  "page": 130,
+  "chars": 3144,
+  "images": 0,
+  "drawings": 3,
+  "captions": []
+ },
+ {
+  "page": 131,
+  "chars": 2973,
+  "images": 0,
+  "drawings": 56,
+  "captions": []
+ },
+ {
+  "page": 132,
+  "chars": 2318,
+  "images": 0,
+  "drawings": 97,
+  "captions": [
+   "Table 54"
+  ]
+ },
+ {
+  "page": 133,
+  "chars": 3488,
+  "images": 0,
+  "drawings": 120,
+  "captions": []
+ },
+ {
+  "page": 134,
+  "chars": 1940,
+  "images": 0,
+  "drawings": 91,
+  "captions": []
+ },
+ {
+  "page": 135,
+  "chars": 2636,
+  "images": 0,
+  "drawings": 114,
+  "captions": []
+ },
+ {
+  "page": 136,
+  "chars": 2883,
+  "images": 0,
+  "drawings": 61,
+  "captions": []
+ },
+ {
+  "page": 137,
+  "chars": 2441,
+  "images": 0,
+  "drawings": 67,
+  "captions": []
+ },
+ {
+  "page": 138,
+  "chars": 3171,
+  "images": 0,
+  "drawings": 120,
+  "captions": []
+ },
+ {
+  "page": 139,
+  "chars": 2464,
+  "images": 3,
+  "drawings": 86,
+  "captions": [
+   "Figure 30"
+  ]
+ },
+ {
+  "page": 140,
+  "chars": 1852,
+  "images": 0,
+  "drawings": 130,
+  "captions": []
+ },
+ {
+  "page": 141,
+  "chars": 2315,
+  "images": 0,
+  "drawings": 105,
+  "captions": []
+ },
+ {
+  "page": 142,
+  "chars": 1830,
+  "images": 0,
+  "drawings": 48,
+  "captions": []
+ },
+ {
+  "page": 143,
+  "chars": 1695,
+  "images": 0,
+  "drawings": 101,
+  "captions": []
+ },
+ {
+  "page": 144,
+  "chars": 2681,
+  "images": 0,
+  "drawings": 103,
+  "captions": []
+ },
+ {
+  "page": 145,
+  "chars": 2627,
+  "images": 0,
+  "drawings": 83,
+  "captions": []
+ },
+ {
+  "page": 146,
+  "chars": 2515,
+  "images": 0,
+  "drawings": 123,
+  "captions": []
+ },
+ {
+  "page": 147,
+  "chars": 2403,
+  "images": 0,
+  "drawings": 95,
+  "captions": []
+ },
+ {
+  "page": 148,
+  "chars": 4203,
+  "images": 0,
+  "drawings": 2,
+  "captions": []
+ },
+ {
+  "page": 149,
+  "chars": 3275,
+  "images": 3,
+  "drawings": 22,
+  "captions": [
+   "Table 55",
+   "Table 56",
+   "Figure 31"
+  ]
+ },
+ {
+  "page": 150,
+  "chars": 3298,
+  "images": 0,
+  "drawings": 31,
+  "captions": [
+   "Table 57"
+  ]
+ },
+ {
+  "page": 151,
+  "chars": 2514,
+  "images": 0,
+  "drawings": 23,
+  "captions": []
+ },
+ {
+  "page": 152,
+  "chars": 1794,
+  "images": 0,
+  "drawings": 14,
+  "captions": []
+ },
+ {
+  "page": 153,
+  "chars": 1179,
+  "images": 0,
+  "drawings": 10,
+  "captions": []
+ },
+ {
+  "page": 154,
+  "chars": 171,
+  "images": 1,
+  "drawings": 2,
+  "captions": [
+   "Figure 32"
+  ]
+ }
+]

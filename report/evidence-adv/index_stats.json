@@ -1,0 +1,21 @@
+{
+  "strategy": "ADV_gemini15",
+  "chunks": 766,
+  "by_kind": {
+    "text": 623,
+    "chart": 41,
+    "table": 79,
+    "figure": 23
+  },
+  "in_db": 766,
+  "pages_in_db": 154,
+  "duplicates_in_db": 0,
+  "chars_total": 558321,
+  "chars_median": 750,
+  "chars_max": 3798,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "embed_seconds": 45.0,
+  "store_seconds": 0.6,
+  "service_cost_usd": 0
+}

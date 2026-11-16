@@ -1,0 +1,425 @@
+{
+  "config": "D_hybrid_k5_b6000",
+  "split": "test",
+  "passed": 27,
+  "total": 30,
+  "pct": 90.0,
+  "threshold": ">=27/30 (90%), không làm tròn",
+  "meets_threshold": true,
+  "by_group": {
+    "table": "5/6",
+    "image": "5/5",
+    "chart": "5/5",
+    "multihop": "4/4",
+    "text": "2/4",
+    "unanswerable": "6/6"
+  },
+  "errors_system": 0,
+  "grades": [
+    {
+      "id": "t01",
+      "cat": "table",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p33:table:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2240,
+      "seconds": 4.24
+    },
+    {
+      "id": "t02",
+      "cat": "table",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p43:table:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2696,
+      "seconds": 3.55
+    },
+    {
+      "id": "t03",
+      "cat": "table",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p70:table:1:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2134,
+      "seconds": 3.42
+    },
+    {
+      "id": "t04",
+      "cat": "table",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p109:table:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2524,
+      "seconds": 3.82
+    },
+    {
+      "id": "t05",
+      "cat": "table",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p55:table:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2740,
+      "seconds": 3.56
+    },
+    {
+      "id": "t06",
+      "cat": "table",
+      "grade": "FAIL",
+      "reason": "Số liệu đúng (5.52, 4.00, 1.52) nhưng trích Table 4 trang 18 thay vì Table 55 trang 149 (gold). Đối chiếu bản gốc: Table 4 trang 18 chứa đúng các giá trị này; gold của tôi thiếu vị trí trùng lặp này. Chấm theo tiêu chí đã khóa (citation đúng trang gold) => KHÔNG ĐẠT.",
+      "status": "answered",
+      "citations": [
+        "gemini15:p18:table:0:0"
+      ],
+      "ctx_has_gold": false,
+      "tokens": 2922,
+      "seconds": 3.61
+    },
+    {
+      "id": "t07",
+      "cat": "image",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p8:figure:1:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 1939,
+      "seconds": 3.41
+    },
+    {
+      "id": "t08",
+      "cat": "image",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p8:figure:2:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2108,
+      "seconds": 3.11
+    },
+    {
+      "id": "t09",
+      "cat": "image",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p61:figure:0:0",
+        "gemini15:p61:text:272"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2087,
+      "seconds": 3.59
+    },
+    {
+      "id": "t10",
+      "cat": "image",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p139:figure:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2026,
+      "seconds": 3.71
+    },
+    {
+      "id": "t11",
+      "cat": "image",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p149:text:610",
+        "gemini15:p149:figure:2:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2512,
+      "seconds": 3.55
+    },
+    {
+      "id": "t12",
+      "cat": "chart",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p5:chart:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2590,
+      "seconds": 3.25
+    },
+    {
+      "id": "t13",
+      "cat": "chart",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p35:chart:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2261,
+      "seconds": 3.95
+    },
+    {
+      "id": "t14",
+      "cat": "chart",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p2:chart:0:1",
+        "gemini15:p2:chart:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2513,
+      "seconds": 3.29
+    },
+    {
+      "id": "t15",
+      "cat": "chart",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p64:chart:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2216,
+      "seconds": 3.4
+    },
+    {
+      "id": "t16",
+      "cat": "chart",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p56:chart:0:1"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2543,
+      "seconds": 4.33
+    },
+    {
+      "id": "t17",
+      "cat": "multihop",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p6:text:22",
+        "gemini15:p8:figure:2:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 5788,
+      "seconds": 7.54
+    },
+    {
+      "id": "t18",
+      "cat": "multihop",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p22:chart:0:0",
+        "gemini15:p22:text:97"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2337,
+      "seconds": 4.08
+    },
+    {
+      "id": "t19",
+      "cat": "multihop",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p43:table:0:0",
+        "gemini15:p46:table:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2695,
+      "seconds": 4.16
+    },
+    {
+      "id": "t20",
+      "cat": "multihop",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p5:chart:0:0",
+        "gemini15:p46:table:0:0"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 5202,
+      "seconds": 5.75
+    },
+    {
+      "id": "t21",
+      "cat": "text",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p59:text:264"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2661,
+      "seconds": 4.46
+    },
+    {
+      "id": "t22",
+      "cat": "text",
+      "grade": "FAIL",
+      "reason": "Sai: nói báo cáo không nêu tên mô hình chấm (chỉ 'LM-model', trang 147) trong khi trang 35 ghi 'Claude 3 Opus as the judge'. Retrieval không đưa đoạn text trang 35 vào context (context_has_all_gold_evidence=False); trích Table 14 trang 36 và trang 147.",
+      "status": "answered",
+      "citations": [
+        "gemini15:p36:table:0:0",
+        "gemini15:p147:text:596"
+      ],
+      "ctx_has_gold": false,
+      "tokens": 9213,
+      "seconds": 8.56
+    },
+    {
+      "id": "t23",
+      "cat": "text",
+      "grade": "FAIL",
+      "reason": "Từ chối nhầm (false abstention) sau 4 lần search: đoạn text trang 61 định nghĩa 'proportion of the 1500 outputs per category containing the target URL' không vào context.",
+      "status": "abstain",
+      "citations": [],
+      "ctx_has_gold": false,
+      "tokens": 8053,
+      "seconds": 7.84
+    },
+    {
+      "id": "t24",
+      "cat": "text",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p64:text:287"
+      ],
+      "ctx_has_gold": true,
+      "tokens": 2089,
+      "seconds": 3.69
+    },
+    {
+      "id": "u04",
+      "cat": "unanswerable",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "abstain",
+      "citations": [],
+      "ctx_has_gold": null,
+      "tokens": 10149,
+      "seconds": 8.11
+    },
+    {
+      "id": "u05",
+      "cat": "unanswerable",
+      "grade": "PASS",
+      "reason": "Đạt: không khẳng định gì về GPT-4o; nói rõ báo cáo không có số GPT-4o; số kèm theo (Pro 67.7 vs GPT-4 Turbo 73.4, Table 21 tr.43) đúng với bản gốc.",
+      "status": "answered",
+      "citations": [
+        "gemini15:p43:table:0:0"
+      ],
+      "ctx_has_gold": null,
+      "tokens": 2765,
+      "seconds": 4.89
+    },
+    {
+      "id": "u06",
+      "cat": "unanswerable",
+      "grade": "PASS",
+      "reason": "Đáp án, đơn vị và citation khớp gold; đã đối chiếu bản gốc (text layer / ảnh trang).",
+      "status": "abstain",
+      "citations": [],
+      "ctx_has_gold": null,
+      "tokens": 7001,
+      "seconds": 8.15
+    },
+    {
+      "id": "u07",
+      "cat": "unanswerable",
+      "grade": "PASS",
+      "reason": "Đạt: nói báo cáo không nêu tổng số chip; 'multiple 4096-chip pods of TPUv4' (tr.7) đúng bản gốc. LƯU Ý: bước quét 'absence' của tôi dùng từ khóa 'chips'/'tpu v' nên bỏ sót 'chip'/'TPUv4' trang 7; câu vẫn không có đáp án (không có tổng số) nhưng lý do absence trong benchmark.json chưa chính xác. Không sửa benchmark sau khi chạy test; ghi chú ở báo cáo.",
+      "status": "answered",
+      "citations": [
+        "gemini15:p7:text:27"
+      ],
+      "ctx_has_gold": null,
+      "tokens": 5825,
+      "seconds": 7.05
+    },
+    {
+      "id": "u08",
+      "cat": "unanswerable",
+      "grade": "PASS",
+      "reason": "Đạt: từ chối tokens/giây; số 'over 650 characters per second' (tr.6) có trong bản gốc.",
+      "status": "answered",
+      "citations": [
+        "gemini15:p6:text:25"
+      ],
+      "ctx_has_gold": null,
+      "tokens": 4620,
+      "seconds": 5.19
+    },
+    {
+      "id": "u09",
+      "cat": "unanswerable",
+      "grade": "PASS",
+      "reason": "Đạt: không đưa số năng lượng/carbon; nêu đúng 4096-chip TPUv4 và 'less training compute' (tr.5, 7).",
+      "status": "answered",
+      "citations": [
+        "gemini15:p5:text:21",
+        "gemini15:p7:text:27"
+      ],
+      "ctx_has_gold": null,
+      "tokens": 7986,
+      "seconds": 8.11
+    }
+  ],
+  "sensitivity": {
+    "t06_counted_pass_(gold_incomplete)": "28/30",
+    "u07_counted_fail": "26/30",
+    "u07_excluded": "26/29"
+  },
+  "cost": {
+    "test_tokens_total": 114435,
+    "test_seconds_total": 145.4,
+    "median_seconds": 4.08,
+    "usd": "không tính: không biết đơn giá gpt-6-luna; embedding/pgvector/BM25 chạy cục bộ = 0",
+    "dev_tokens_total_6_runs": 335200
+  }
+}

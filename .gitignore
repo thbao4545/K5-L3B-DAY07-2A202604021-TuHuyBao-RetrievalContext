@@ -9,3 +9,10 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Advanced challenge: large/regenerable files (PDF is downloaded from arXiv, page images are re-rendered by adv/extract.py)
+adv/.venv-extract/
+adv/data/*.pdf
+adv/out/pages/
+adv/out/view/
+adv/results/

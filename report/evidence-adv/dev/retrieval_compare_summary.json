@@ -1,0 +1,143 @@
+{
+  "split": "dev",
+  "rows": [
+    {
+      "method": "dense",
+      "n": 15,
+      "hit1": 9,
+      "hit3": 14,
+      "context": {
+        "3000": 13,
+        "6000": 14
+      },
+      "median_ms": 38.1,
+      "by_cat": {
+        "chart": {
+          "n": 3,
+          "hit1": 2,
+          "hit3": 3,
+          "ctx3000": 3
+        },
+        "image": {
+          "n": 3,
+          "hit1": 3,
+          "hit3": 3,
+          "ctx3000": 3
+        },
+        "multihop": {
+          "n": 2,
+          "hit1": 0,
+          "hit3": 1,
+          "ctx3000": 0
+        },
+        "table": {
+          "n": 4,
+          "hit1": 2,
+          "hit3": 4,
+          "ctx3000": 4
+        },
+        "text": {
+          "n": 3,
+          "hit1": 2,
+          "hit3": 3,
+          "ctx3000": 3
+        }
+      },
+      "misses_hit3": [
+        "d12"
+      ]
+    },
+    {
+      "method": "bm25",
+      "n": 15,
+      "hit1": 11,
+      "hit3": 14,
+      "context": {
+        "3000": 14,
+        "6000": 14
+      },
+      "median_ms": 6.6,
+      "by_cat": {
+        "chart": {
+          "n": 3,
+          "hit1": 3,
+          "hit3": 3,
+          "ctx3000": 3
+        },
+        "image": {
+          "n": 3,
+          "hit1": 3,
+          "hit3": 3,
+          "ctx3000": 3
+        },
+        "multihop": {
+          "n": 2,
+          "hit1": 0,
+          "hit3": 1,
+          "ctx3000": 1
+        },
+        "table": {
+          "n": 4,
+          "hit1": 2,
+          "hit3": 4,
+          "ctx3000": 4
+        },
+        "text": {
+          "n": 3,
+          "hit1": 3,
+          "hit3": 3,
+          "ctx3000": 3
+        }
+      },
+      "misses_hit3": [
+        "d12"
+      ]
+    },
+    {
+      "method": "hybrid",
+      "n": 15,
+      "hit1": 10,
+      "hit3": 14,
+      "context": {
+        "3000": 14,
+        "6000": 14
+      },
+      "median_ms": 46.5,
+      "by_cat": {
+        "chart": {
+          "n": 3,
+          "hit1": 2,
+          "hit3": 3,
+          "ctx3000": 3
+        },
+        "image": {
+          "n": 3,
+          "hit1": 3,
+          "hit3": 3,
+          "ctx3000": 3
+        },
+        "multihop": {
+          "n": 2,
+          "hit1": 0,
+          "hit3": 1,
+          "ctx3000": 1
+        },
+        "table": {
+          "n": 4,
+          "hit1": 3,
+          "hit3": 4,
+          "ctx3000": 4
+        },
+        "text": {
+          "n": 3,
+          "hit1": 2,
+          "hit3": 3,
+          "ctx3000": 3
+        }
+      },
+      "misses_hit3": [
+        "d12"
+      ]
+    }
+  ]
+}

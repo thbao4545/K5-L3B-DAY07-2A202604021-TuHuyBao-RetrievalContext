@@ -1,0 +1,189 @@
+{
+  "config": "B_bm25_latest",
+  "split": "dev",
+  "model": "gpt-6-luna",
+  "retriever": "bm25",
+  "top_k": 3,
+  "budget_chars": 3000,
+  "max_searches": 4,
+  "context_policy": "latest_first",
+  "reasoning_effort": "none",
+  "errors": 0,
+  "auto_proxy_NOT_final_grades": {
+    "answered_of_answerable": "13/15",
+    "context_has_all_gold_evidence": "13/15",
+    "cited_chunks_cover_gold": "12/15",
+    "abstained_of_unanswerable": "2/3"
+  },
+  "tokens": {
+    "prompt_tokens": 47599,
+    "completion_tokens": 2553,
+    "total_tokens": 50152
+  },
+  "median_seconds": 4.35,
+  "service_cost_usd": "not computed: model price unknown; token counts recorded",
+  "rows": [
+    {
+      "id": "d01",
+      "cat": "table",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d02",
+      "cat": "table",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d03",
+      "cat": "table",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d04",
+      "cat": "table",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d05",
+      "cat": "image",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d06",
+      "cat": "image",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d07",
+      "cat": "image",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d08",
+      "cat": "chart",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d09",
+      "cat": "chart",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d10",
+      "cat": "chart",
+      "answerable": true,
+      "status": "abstain",
+      "n_search": 2,
+      "ctx_hit": true,
+      "cited_hit": false
+    },
+    {
+      "id": "d11",
+      "cat": "multihop",
+      "answerable": true,
+      "status": "abstain",
+      "n_search": 4,
+      "ctx_hit": false,
+      "cited_hit": false
+    },
+    {
+      "id": "d12",
+      "cat": "multihop",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 2,
+      "ctx_hit": false,
+      "cited_hit": false
+    },
+    {
+      "id": "d13",
+      "cat": "text",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d14",
+      "cat": "text",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "d15",
+      "cat": "text",
+      "answerable": true,
+      "status": "answered",
+      "n_search": 1,
+      "ctx_hit": true,
+      "cited_hit": true
+    },
+    {
+      "id": "u01",
+      "cat": "unanswerable",
+      "answerable": false,
+      "status": "abstain",
+      "n_search": 4,
+      "ctx_hit": null,
+      "cited_hit": null
+    },
+    {
+      "id": "u02",
+      "cat": "unanswerable",
+      "answerable": false,
+      "status": "answered",
+      "n_search": 4,
+      "ctx_hit": null,
+      "cited_hit": null
+    },
+    {
+      "id": "u03",
+      "cat": "unanswerable",
+      "answerable": false,
+      "status": "abstain",
+      "n_search": 4,
+      "ctx_hit": null,
+      "cited_hit": null
+    }
+  ]
+}
